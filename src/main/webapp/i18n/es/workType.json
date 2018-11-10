@@ -1,0 +1,27 @@
+
+{
+    "talentpipeApp": {
+        "workType" : {
+            "home": {
+                "title": "Work Types",
+                "createLabel": "Crear nuevo Work Type",
+                "createOrEditLabel": "Crear o editar Work Type",
+                "search": "Search for Work Type"
+            },
+            "created": "Un nuevo Work Type ha sido creado con el identificador {{ param }}",
+            "updated": "Un Work Type ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Work Type ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Work Type {{ id }}?"
+            },
+            "detail": {
+                "title": "Work Type"
+            },
+            "name": "Name",
+            "normalizedName": "Normalized Name",
+            "description": "Description",
+            "minQuantityHours": "Min Quantity Hours",
+            "maxQuantityHours": "Max Quantity Hours"
+        }
+    }
+}

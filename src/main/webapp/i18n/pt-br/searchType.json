@@ -1,0 +1,25 @@
+
+{
+    "talentpipeApp": {
+        "searchType" : {
+            "home": {
+                "title": "Search Types",
+                "createLabel": "Criar novo Search Type",
+                "createOrEditLabel": "Criar ou editar Search Type",
+                "search": "Pesquisar por Search Type"
+            },
+            "created": "Um novo Search Type foi criado com o identificador {{ param }}",
+            "updated": "Um Search Type foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Search Type foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Search Type {{ id }}?"
+            },
+            "detail": {
+                "title": "Search Type"
+            },
+            "name": "Name",
+            "normalizedName": "Normalized Name",
+            "description": "Description"
+        }
+    }
+}

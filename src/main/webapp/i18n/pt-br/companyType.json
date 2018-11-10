@@ -1,0 +1,27 @@
+
+{
+    "talentpipeApp": {
+        "companyType" : {
+            "home": {
+                "title": "Company Types",
+                "createLabel": "Criar novo Company Type",
+                "createOrEditLabel": "Criar ou editar Company Type",
+                "search": "Pesquisar por Company Type"
+            },
+            "created": "Um novo Company Type foi criado com o identificador {{ param }}",
+            "updated": "Um Company Type foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Company Type foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Company Type {{ id }}?"
+            },
+            "detail": {
+                "title": "Company Type"
+            },
+            "name": "Name",
+            "normalizedName": "Normalized Name",
+            "description": "Description",
+            "minEmployeesQuantity": "Min Employees Quantity",
+            "maxEmployeesQuantity": "Max Employees Quantity"
+        }
+    }
+}

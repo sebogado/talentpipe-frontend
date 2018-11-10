@@ -1,0 +1,25 @@
+
+{
+    "talentpipeApp": {
+        "softSkill" : {
+            "home": {
+                "title": "SoftSkills",
+                "createLabel": "Créer un nouveau Soft Skill",
+                "createOrEditLabel": "Créer ou éditer un Soft Skill",
+                "search": "Recherche pour Soft Skill"
+            },
+            "created": "Un nouveau Soft Skill a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Soft Skill avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Soft Skill avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Soft Skill {{ id }} ?"
+            },
+            "detail": {
+                "title": "Soft Skill"
+            },
+            "name": "Name",
+            "normalizedName": "Normalized Name",
+            "description": "Description"
+        }
+    }
+}

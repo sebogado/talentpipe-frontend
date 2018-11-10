@@ -1,0 +1,25 @@
+
+{
+    "talentpipeApp": {
+        "stateBeforeTax" : {
+            "home": {
+                "title": "State Before Taxes",
+                "createLabel": "Crear nuevo State Before Tax",
+                "createOrEditLabel": "Crear o editar State Before Tax",
+                "search": "Search for State Before Tax"
+            },
+            "created": "Un nuevo State Before Tax ha sido creado con el identificador {{ param }}",
+            "updated": "Un State Before Tax ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un State Before Tax ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar State Before Tax {{ id }}?"
+            },
+            "detail": {
+                "title": "State Before Tax"
+            },
+            "name": "Name",
+            "normalizedName": "Normalized Name",
+            "description": "Description"
+        }
+    }
+}

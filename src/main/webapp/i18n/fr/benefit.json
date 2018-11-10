@@ -1,0 +1,25 @@
+
+{
+    "talentpipeApp": {
+        "benefit" : {
+            "home": {
+                "title": "Benefits",
+                "createLabel": "Créer un nouveau Benefit",
+                "createOrEditLabel": "Créer ou éditer un Benefit",
+                "search": "Recherche pour Benefit"
+            },
+            "created": "Un nouveau Benefit a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Benefit avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Benefit avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Benefit {{ id }} ?"
+            },
+            "detail": {
+                "title": "Benefit"
+            },
+            "name": "Name",
+            "normalizedName": "Normalized Name",
+            "description": "Description"
+        }
+    }
+}
