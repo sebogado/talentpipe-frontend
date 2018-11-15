@@ -1,29 +1,33 @@
-#!/usr/bin/env groovy
-
 node {
-    stage('checkout') {
-        checkout scm
+  try {
+    stage('Checkout') {
+      checkout scm
     }
-
-    stage('check java') {
-        sh "java -version"
+    stage('Environment') {
+      sh 'git --version'
+      echo "Branch: ${env.BRANCH_NAME}"
+      sh 'docker -v'
+      sh 'printenv'
     }
-
-    stage('quality analysis') {
-        withSonarQubeEnv('sonar-qube') {
-        }
+    stage('Build Docker test'){
+      sh 'docker build -t react-test -f Dockerfile.test --no-cache . '
     }
-
-   def dockerImage
-       stage('build docker') {
-           sh "cp -R src/main/docker build/"
-           sh "cp build/* build/docker/"
-           dockerImage = docker.build('kimosproject/talent-pipe-frontend', 'build/docker')
-        }
-
-    stage('publish docker') {
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-login') {
-            dockerImage.push 'latest'
-        }
+    stage('Docker test'){
+      sh 'docker run --rm react-test'
     }
+    stage('Clean Docker test'){
+      sh 'docker rmi react-test'
+    }
+    stage('Deploy'){
+      if(env.BRANCH_NAME == 'master'){
+        sh 'docker build -t react-app --no-cache .'
+        sh 'docker tag react-app kimosproject/react-app'
+        sh 'docker push kimosproject/react-app'
+        sh 'docker rmi -f react-app kimosproject/react-app'
+      }
+    }
+  }
+  catch (err) {
+    throw err
+  }
 }
