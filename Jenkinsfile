@@ -5,21 +5,21 @@ node {
         checkout scm
     }
 
-    stage('check java') {
-        sh "java -version"
-    }
+    docker.image('jhipster/jhipster:v5.3.4').inside('-u root') {
+        stage('check java') {
+            sh "java -version"
+        }
 
-    stage('quality analysis') {
-        withSonarQubeEnv('sonar-qube') {
+        stage('quality analysis') {
+            withSonarQubeEnv('sonar-qube') {
+            }
         }
     }
 
     def dockerImage
-        stage('build docker') {
-            sh "cp -R src/main/docker build/"
-            sh "cp build/libs/*.war build/docker/"
-            dockerImage = docker.build('kimosproject/frontend', 'build/docker')
-        }
+    stage('build docker') {
+    }
+
     stage('publish docker') {
         docker.withRegistry('https://registry.hub.docker.com', 'docker-login') {
             dockerImage.push 'latest'
