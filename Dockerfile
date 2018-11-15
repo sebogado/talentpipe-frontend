@@ -20,7 +20,7 @@ COPY package-lock.json /usr/src/app/
 RUN npm install
 
 # Bundle app source
-COPY . /usr/src/app
+COPY src/main/docker /usr/src/app
 
 # Port to listener
 EXPOSE 3000
