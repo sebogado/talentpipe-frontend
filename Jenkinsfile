@@ -12,6 +12,9 @@ pipeline {
     }
 
     stages {
+        stage('checkout') {
+                checkout scm
+            }
         stage('Prepare') {
             steps {
                 sh "npm install -g yarn"
