@@ -1,28 +1,40 @@
 #!/usr/bin/env groovy
 
-node {
-    stage('checkout') {
-        checkout scm
+pipeline {
+    agent {
+        docker {
+            image 'node:8-alpine'
+            args '-p 3000:3000'
+        }
+    }
+    environment {
+        CI = 'true'
     }
 
-    docker.image('jhipster/jhipster:v5.3.4').inside('-u root') {
-        stage('check java') {
-            sh "java -version"
-        }
+    stages {
+        stage('Prepare') {
+            steps {
+                sh "npm install -g yarn"
+                sh "yarn install"
+            } }
 
-        stage('quality analysis') {
-            withSonarQubeEnv('sonar-qube') {
+        stage('Build') {
+            steps {
+                sh "yarn build"
+                dir('build') { stash name: 'www', includes: 'www/**' }
+
             }
         }
-    }
-
-    def dockerImage
-    stage('build docker') {
-    }
-
-    stage('publish docker') {
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-login') {
-            dockerImage.push 'latest'
+        stage('Deploy - Testing') {
+            steps {
+                unstash 'www'
+                sh "ls -lart /media/DeployAngular/Testing"
+                sh "rm -rf /media/DeployAngular/Testing/prestaciones/"
+                sh "mkdir -p /media/DeployAngular/Testing/prestaciones/"
+                sh "cp -r www /media/DeployAngular/Testing/prestaciones"
+                sh "ls -lart /media/DeployAngular/Testing"
+                sh "ls -lart /media/DeployAngular/Testing/prestaciones"
+            }
         }
     }
 }
