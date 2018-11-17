@@ -1,0 +1,24 @@
+{
+  "talentPipeFrontendApp": {
+    "sector": {
+      "home": {
+        "title": "Sectors",
+        "createLabel": "Criar novo Sector",
+        "createOrEditLabel": "Criar ou editar Sector",
+        "search": "Pesquisar por Sector"
+      },
+      "created": "Um novo Sector foi criado com o identificador {{ param }}",
+      "updated": "Um Sector foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Sector foi deletado com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Sector {{ id }}?"
+      },
+      "detail": {
+        "title": "Sector"
+      },
+      "name": "Name",
+      "normalizedName": "Normalized Name",
+      "description": "Description"
+    }
+  }
+}

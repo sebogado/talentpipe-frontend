@@ -12,6 +12,46 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import area, {
+  AreaState
+} from 'app/entities/area/area.reducer';
+// prettier-ignore
+import benefit, {
+  BenefitState
+} from 'app/entities/benefit/benefit.reducer';
+// prettier-ignore
+import companyType, {
+  CompanyTypeState
+} from 'app/entities/company-type/company-type.reducer';
+// prettier-ignore
+import country, {
+  CountryState
+} from 'app/entities/country/country.reducer';
+// prettier-ignore
+import searchType, {
+  SearchTypeState
+} from 'app/entities/search-type/search-type.reducer';
+// prettier-ignore
+import sector, {
+  SectorState
+} from 'app/entities/sector/sector.reducer';
+// prettier-ignore
+import softSkill, {
+  SoftSkillState
+} from 'app/entities/soft-skill/soft-skill.reducer';
+// prettier-ignore
+import stateBeforeTax, {
+  StateBeforeTaxState
+} from 'app/entities/state-before-tax/state-before-tax.reducer';
+// prettier-ignore
+import technicalSkill, {
+  TechnicalSkillState
+} from 'app/entities/technical-skill/technical-skill.reducer';
+// prettier-ignore
+import workType, {
+  WorkTypeState
+} from 'app/entities/work-type/work-type.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +65,16 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly area: AreaState;
+  readonly benefit: BenefitState;
+  readonly companyType: CompanyTypeState;
+  readonly country: CountryState;
+  readonly searchType: SearchTypeState;
+  readonly sector: SectorState;
+  readonly softSkill: SoftSkillState;
+  readonly stateBeforeTax: StateBeforeTaxState;
+  readonly technicalSkill: TechnicalSkillState;
+  readonly workType: WorkTypeState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +90,16 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  area,
+  benefit,
+  companyType,
+  country,
+  searchType,
+  sector,
+  softSkill,
+  stateBeforeTax,
+  technicalSkill,
+  workType,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

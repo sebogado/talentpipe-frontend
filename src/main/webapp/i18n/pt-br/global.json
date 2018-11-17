@@ -1,12 +1,23 @@
 {
   "global": {
     "title": "TalentPipeFrontend",
-    "browsehappy": "Você está usando um navegador <strong>desatualizado</strong>. Favor <a href=\"http://browsehappy.com/?locale=pt_BR\">atualizar o seu navegador</a> para ter uma experiência melhor.",
+    "browsehappy":
+      "Você está usando um navegador <strong>desatualizado</strong>. Favor <a href=\"http://browsehappy.com/?locale=pt_BR\">atualizar o seu navegador</a> para ter uma experiência melhor.",
     "menu": {
       "home": "Início",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
+        "area": "Area",
+        "benefit": "Benefit",
+        "companyType": "Company Type",
+        "country": "Country",
+        "searchType": "Search Type",
+        "sector": "Sector",
+        "softSkill": "Soft Skill",
+        "stateBeforeTax": "State Before Tax",
+        "technicalSkill": "Technical Skill",
+        "workType": "Work Type",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -50,7 +61,8 @@
         "authenticated": {
           "prefix": "Para ",
           "link": "entrar",
-          "suffix": ", utilize as seguintes contas padrões:<br/>- Administrador (usuário=\"admin\" and senha=\"admin\") <br/>- Usuário (usuário=\"user\" and senha=\"user\")."
+          "suffix":
+            ", utilize as seguintes contas padrões:<br/>- Administrador (usuário=\"admin\" and senha=\"admin\") <br/>- Usuário (usuário=\"user\" and senha=\"user\")."
         },
         "register": {
           "noaccount": "Não possui uma conta ainda?",
