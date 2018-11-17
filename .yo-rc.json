@@ -3,27 +3,27 @@
     "promptValues": {
       "nativeLanguage": "es"
     },
-    "jhipsterVersion": "5.3.4",
+    "jhipsterVersion": "5.7.0",
     "applicationType": "monolith",
-    "baseName": "talentpipe",
+    "baseName": "talentPipeFrontend",
     "clientFramework": "react",
     "useSass": false,
     "clientPackageManager": "npm",
     "authenticationType": "jwt",
     "cacheProvider": "no",
-    "databaseType": "sql",
-    "devDatabaseType": "mysql",
-    "prodDatabaseType": "mysql",
+    "databaseType": "mySql",
+    "devDatabaseType": "mySql",
+    "prodDatabaseType": "mySql",
     "testFrameworks": [
       "protractor"
     ],
     "jhiPrefix": "jhi",
+    "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "es",
     "languages": [
       "es",
       "en",
-      "fr",
       "pt-br"
     ],
     "skipServer": true

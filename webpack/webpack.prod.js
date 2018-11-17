@@ -19,7 +19,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     main: './src/main/webapp/app/index'
   },
   output: {
-    path: utils.root('build/www'),
+    path: utils.root('build/'),
     filename: 'app/[name].[hash].bundle.js',
     chunkFilename: 'app/[name].[hash].chunk.js'
   },
@@ -75,7 +75,6 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
       localesToKeep: [
         'es',
         'en',
-        'fr',
         'pt-br'
         // jhipster-needle-i18n-language-moment-webpack - JHipster will add/remove languages in this array
       ]
