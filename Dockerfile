@@ -20,7 +20,7 @@ COPY package.json /usr/src/app/
 RUN npm install
 
 # Bundle app source
-COPY src/main/docker /usr/src/app
+COPY . /usr/src/app
 
 # Port to listener
 EXPOSE 3000
