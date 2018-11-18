@@ -14,6 +14,9 @@ import SoftSkill from './soft-skill';
 import StateBeforeTax from './state-before-tax';
 import TechnicalSkill from './technical-skill';
 import WorkType from './work-type';
+import City from './city';
+import Company from './company';
+import Recruiter from './recruiter';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 const Routes = ({ match }) => (
@@ -30,6 +33,9 @@ const Routes = ({ match }) => (
       <ErrorBoundaryRoute path={`${match.url}/state-before-tax`} component={StateBeforeTax} />
       <ErrorBoundaryRoute path={`${match.url}/technical-skill`} component={TechnicalSkill} />
       <ErrorBoundaryRoute path={`${match.url}/work-type`} component={WorkType} />
+      <ErrorBoundaryRoute path={`${match.url}/city`} component={City} />
+      <ErrorBoundaryRoute path={`${match.url}/company`} component={Company} />
+      <ErrorBoundaryRoute path={`${match.url}/recruiter`} component={Recruiter} />
       {/* jhipster-needle-add-route-path - JHipster will routes here */}
     </Switch>
   </div>

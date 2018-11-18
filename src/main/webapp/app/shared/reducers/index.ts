@@ -52,6 +52,18 @@ import technicalSkill, {
 import workType, {
   WorkTypeState
 } from 'app/entities/work-type/work-type.reducer';
+// prettier-ignore
+import city, {
+  CityState
+} from 'app/entities/city/city.reducer';
+// prettier-ignore
+import company, {
+  CompanyState
+} from 'app/entities/company/company.reducer';
+// prettier-ignore
+import recruiter, {
+  RecruiterState
+} from 'app/entities/recruiter/recruiter.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -75,6 +87,9 @@ export interface IRootState {
   readonly stateBeforeTax: StateBeforeTaxState;
   readonly technicalSkill: TechnicalSkillState;
   readonly workType: WorkTypeState;
+  readonly city: CityState;
+  readonly company: CompanyState;
+  readonly recruiter: RecruiterState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -100,6 +115,9 @@ const rootReducer = combineReducers<IRootState>({
   stateBeforeTax,
   technicalSkill,
   workType,
+  city,
+  company,
+  recruiter,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });
