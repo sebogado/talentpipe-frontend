@@ -30,8 +30,8 @@ ENV NODE_ENV production
 ENV PORT 3000
 ENV PUBLIC_PATH "/"
 
-RUN npm run start:build
+RUN npm run webpack:build
 
 # Main command
 #CMD [ "npm", "run", "start:server" ]
-CMD [ "npm", "run", "webpack:prod:main" ]
+CMD [ "npm", "run", "webpack:prod" ]
