@@ -34,4 +34,4 @@ RUN npm run webpack:build
 
 # Main command
 #CMD [ "npm", "run", "start:server" ]
-CMD [ "npm", "run", "webpack:prod" ]
+CMD [ "npm", "run", "webpack" ]
