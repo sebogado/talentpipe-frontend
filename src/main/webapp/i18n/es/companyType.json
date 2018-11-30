@@ -2,25 +2,25 @@
   "talentPipeFrontendApp": {
     "companyType": {
       "home": {
-        "title": "Company Types",
-        "createLabel": "Crear nuevo Company Type",
-        "createOrEditLabel": "Crear o editar Company Type",
-        "search": "Search for Company Type"
+        "title": "Tipo de emrpesa",
+        "createLabel": "Crear nuevo tipo de empresa",
+        "createOrEditLabel": "Crear o editar tipo de empresa",
+        "search": "Buscar nuevo tipo de emrpesa"
       },
-      "created": "Un nuevo Company Type ha sido creado con el identificador {{ param }}",
-      "updated": "Un Company Type ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Company Type ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo tipo de empresa ha sido creado con el identificador {{ param }}",
+      "updated": "Un tipo de empresa ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un tipo de empresa ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Company Type {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el tipo de empresa {{ id }}?"
       },
       "detail": {
-        "title": "Company Type"
+        "title": "Tipo de empresa"
       },
-      "name": "Name",
-      "normalizedName": "Normalized Name",
-      "description": "Description",
-      "minEmployeesQuantity": "Min Employees Quantity",
-      "maxEmployeesQuantity": "Max Employees Quantity"
+      "name": "Nombre",
+      "normalizedName": "Nombre normalizado",
+      "description": "Descripcion",
+      "minEmployeesQuantity": "Cantidad mínima de empleados",
+      "maxEmployeesQuantity": "Cantidad máxima de empleados"
     }
   }
 }

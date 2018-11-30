@@ -1,0 +1,32 @@
+{
+  "talentPipeFrontendApp": {
+    "recruiter": {
+      "home": {
+        "title": "Recruiters",
+        "createLabel": "Create a new Recruiter",
+        "createOrEditLabel": "Create or edit a Recruiter",
+        "search": "Search for Recruiter"
+      },
+      "created": "A new Recruiter is created with identifier {{ param }}",
+      "updated": "A Recruiter is updated with identifier {{ param }}",
+      "deleted": "A Recruiter is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Recruiter {{ id }}?"
+      },
+      "detail": {
+        "title": "Recruiter"
+      },
+      "name": "Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "taxId": "Tax Id",
+      "phone": "Phone",
+      "street": "Street",
+      "number": "Number",
+      "floor": "Floor",
+      "apartment": "Apartment",
+      "city": "City",
+      "sector": "Sector"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "talentPipeFrontendApp": {
+    "company": {
+      "home": {
+        "title": "Empresas",
+        "createLabel": "Crear nueva Empresa",
+        "createOrEditLabel": "Crear o editar empresas",
+        "search": "Buscar empresas"
+      },
+      "created": "Una nueva empresa ha sido creada con el identificador {{ param }}",
+      "updated": "Una empresa ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una empresa ha sido eliminada con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar la empresa {{ id }}?"
+      },
+      "detail": {
+        "title": "Empresa"
+      },
+      "taxName": "Razon social",
+      "taxId": "CUIT",
+      "email": "Email",
+      "name": "Nombre",
+      "street": "Calle",
+      "floor": "Piso",
+      "number": "Numero",
+      "apartment": "Departamento",
+      "postalCode": "Codigo postal",
+      "phone": "Telefono",
+      "contactName": "Nombre del contacto",
+      "mainUser": "Usuario pŕincipal",
+      "sector": "Sector",
+      "city": "Ciudad",
+      "companyType": "Tipo de empresa"
+    }
+  }
+}

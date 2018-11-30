@@ -2,25 +2,25 @@
   "talentPipeFrontendApp": {
     "country": {
       "home": {
-        "title": "Countries",
-        "createLabel": "Crear nuevo Country",
-        "createOrEditLabel": "Crear o editar Country",
-        "search": "Search for Country"
+        "title": "Paises",
+        "createLabel": "Crear nuevo País",
+        "createOrEditLabel": "Crear o editar País",
+        "search": "Buscar paises"
       },
-      "created": "Un nuevo Country ha sido creado con el identificador {{ param }}",
-      "updated": "Un Country ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Country ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo país ha sido creado con el identificador {{ param }}",
+      "updated": "Un país ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un país ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Country {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el país {{ id }}?"
       },
       "detail": {
-        "title": "Country"
+        "title": "país"
       },
-      "name": "Name",
-      "normalizedName": "Normalized Name",
-      "code": "Code",
-      "phoneCode": "Phone Code",
-      "currency": "Currency"
+      "name": "Nombre",
+      "normalizedName": "Nombre normalizado",
+      "code": "Codigo",
+      "phoneCode": "Prefijo telefonico",
+      "currency": "Moneda"
     }
   }
 }

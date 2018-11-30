@@ -2,23 +2,23 @@
   "talentPipeFrontendApp": {
     "sector": {
       "home": {
-        "title": "Sectors",
+        "title": "Sectores",
         "createLabel": "Crear nuevo Sector",
         "createOrEditLabel": "Crear o editar Sector",
-        "search": "Search for Sector"
+        "search": "Buscar Sectores"
       },
       "created": "Un nuevo Sector ha sido creado con el identificador {{ param }}",
       "updated": "Un Sector ha sido actualizado con el identificador {{ param }}",
       "deleted": "Un Sector ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Sector {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el Sector {{ id }}?"
       },
       "detail": {
         "title": "Sector"
       },
-      "name": "Name",
-      "normalizedName": "Normalized Name",
-      "description": "Description"
+      "name": "Nombre",
+      "normalizedName": "Nombre normalizado",
+      "description": "Descripción"
     }
   }
 }

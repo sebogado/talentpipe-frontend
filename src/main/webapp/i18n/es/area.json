@@ -3,22 +3,22 @@
     "area": {
       "home": {
         "title": "Areas",
-        "createLabel": "Crear nuevo Area",
+        "createLabel": "Crear una nueva Area",
         "createOrEditLabel": "Crear o editar Area",
-        "search": "Search for Area"
+        "search": "Buscar areas"
       },
-      "created": "Un nuevo Area ha sido creado con el identificador {{ param }}",
-      "updated": "Un Area ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Area ha sido eliminado con el identificador {{ param }}",
+      "created": "Una nueva Area ha sido creada con el identificador {{ param }}",
+      "updated": "Una Area ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una Area ha sido eliminada con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Area {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el Area {{ id }}?"
       },
       "detail": {
         "title": "Area"
       },
-      "name": "Name",
-      "normalizedName": "Normalized Name",
-      "description": "Description"
+      "name": "Nombre",
+      "normalizedName": "Nombre normalizado",
+      "description": "descripcion"
     }
   }
 }
