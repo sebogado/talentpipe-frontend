@@ -34,4 +34,4 @@ ENV PUBLIC_PATH "/"
 
 # Main command
 #CMD [ "npm", "run", "start:server" ]
-CMD [ "npm", "run", "start-tls" ]
+CMD [ "npm", "run", "start" ]
