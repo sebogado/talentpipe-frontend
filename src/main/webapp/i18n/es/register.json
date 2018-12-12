@@ -1,5 +1,11 @@
 {
   "register": {
+    "company": {
+      "title": "Registrar mi empresa"
+    },
+    "recruiter": {
+      "title": "Registrarme como recruiter"
+    },
     "title": "Registro",
     "form": {
       "button": "Crear la cuenta"

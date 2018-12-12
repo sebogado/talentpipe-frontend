@@ -45,3 +45,24 @@ export const Home = props => (
     </NavLink>
   </NavItem>
 );
+
+export const Recruiter = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/start/recruiter" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="fingerprint" />
+      <span>
+        <Translate contentKey="global.menu.iam.recruiter"> Recruiter </Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
+export const Company = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/start/company" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="building" />
+      <span>
+        <Translate contentKey="global.menu.iam.company"> Company </Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
