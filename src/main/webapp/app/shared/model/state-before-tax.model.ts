@@ -1,7 +1,6 @@
 export interface IStateBeforeTax {
   id?: number;
   name?: string;
-  normalizedName?: string;
   description?: string;
 }
 

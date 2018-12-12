@@ -25,9 +25,8 @@ export class StateBeforeTaxDetail extends React.Component<IStateBeforeTaxDetailP
       <Row>
         <Col md="8">
           <h2>
-            <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.detail.title">StateBeforeTax</Translate> [<b>
-              {stateBeforeTaxEntity.id}
-            </b>]
+            <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.detail.title">StateBeforeTax</Translate> [
+            <b>{stateBeforeTaxEntity.id}</b>]
           </h2>
           <dl className="jh-entity-details">
             <dt>
@@ -36,12 +35,6 @@ export class StateBeforeTaxDetail extends React.Component<IStateBeforeTaxDetailP
               </span>
             </dt>
             <dd>{stateBeforeTaxEntity.name}</dd>
-            <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{stateBeforeTaxEntity.normalizedName}</dd>
             <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.description">Description</Translate>
@@ -54,7 +47,8 @@ export class StateBeforeTaxDetail extends React.Component<IStateBeforeTaxDetailP
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/state-before-tax/${stateBeforeTaxEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

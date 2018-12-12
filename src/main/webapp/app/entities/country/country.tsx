@@ -83,7 +83,8 @@ export class Country extends React.Component<ICountryProps, ICountryState> {
         <h2 id="country-heading">
           <Translate contentKey="talentPipeFrontendApp.country.home.title">Countries</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.country.home.createLabel">Create new Country</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class Country extends React.Component<ICountryProps, ICountryState> {
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.country.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.country.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('code')}>
                   <Translate contentKey="talentPipeFrontendApp.country.code">Code</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -145,7 +142,6 @@ export class Country extends React.Component<ICountryProps, ICountryState> {
                     </Button>
                   </td>
                   <td>{country.name}</td>
-                  <td>{country.normalizedName}</td>
                   <td>{country.code}</td>
                   <td>{country.phoneCode}</td>
                   <td>{country.currency}</td>

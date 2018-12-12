@@ -83,7 +83,8 @@ export class Benefit extends React.Component<IBenefitProps, IBenefitState> {
         <h2 id="benefit-heading">
           <Translate contentKey="talentPipeFrontendApp.benefit.home.title">Benefits</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.benefit.home.createLabel">Create new Benefit</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class Benefit extends React.Component<IBenefitProps, IBenefitState> {
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.benefit.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.benefit.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.benefit.description">Description</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -139,7 +136,6 @@ export class Benefit extends React.Component<IBenefitProps, IBenefitState> {
                     </Button>
                   </td>
                   <td>{benefit.name}</td>
-                  <td>{benefit.normalizedName}</td>
                   <td>{benefit.description}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">

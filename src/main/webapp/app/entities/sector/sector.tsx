@@ -83,7 +83,8 @@ export class Sector extends React.Component<ISectorProps, ISectorState> {
         <h2 id="sector-heading">
           <Translate contentKey="talentPipeFrontendApp.sector.home.title">Sectors</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.sector.home.createLabel">Create new Sector</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class Sector extends React.Component<ISectorProps, ISectorState> {
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.sector.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.sector.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.sector.description">Description</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -139,7 +136,6 @@ export class Sector extends React.Component<ISectorProps, ISectorState> {
                     </Button>
                   </td>
                   <td>{sector.name}</td>
-                  <td>{sector.normalizedName}</td>
                   <td>{sector.description}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">

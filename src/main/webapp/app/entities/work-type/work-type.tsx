@@ -50,7 +50,8 @@ export class WorkType extends React.Component<IWorkTypeProps, IWorkTypeState> {
         <h2 id="work-type-heading">
           <Translate contentKey="talentPipeFrontendApp.workType.home.title">Work Types</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.workType.home.createLabel">Create new Work Type</Translate>
           </Link>
         </h2>
@@ -88,9 +89,6 @@ export class WorkType extends React.Component<IWorkTypeProps, IWorkTypeState> {
                   <Translate contentKey="talentPipeFrontendApp.workType.name">Name</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="talentPipeFrontendApp.workType.normalizedName">Normalized Name</Translate>
-                </th>
-                <th>
                   <Translate contentKey="talentPipeFrontendApp.workType.description">Description</Translate>
                 </th>
                 <th>
@@ -111,7 +109,6 @@ export class WorkType extends React.Component<IWorkTypeProps, IWorkTypeState> {
                     </Button>
                   </td>
                   <td>{workType.name}</td>
-                  <td>{workType.normalizedName}</td>
                   <td>{workType.description}</td>
                   <td>{workType.minQuantityHours}</td>
                   <td>{workType.maxQuantityHours}</td>

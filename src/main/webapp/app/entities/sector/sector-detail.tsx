@@ -35,12 +35,6 @@ export class SectorDetail extends React.Component<ISectorDetailProps> {
             </dt>
             <dd>{sectorEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.sector.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{sectorEntity.normalizedName}</dd>
-            <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.sector.description">Description</Translate>
               </span>
@@ -52,7 +46,8 @@ export class SectorDetail extends React.Component<ISectorDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/sector/${sectorEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

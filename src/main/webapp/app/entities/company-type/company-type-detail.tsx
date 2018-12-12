@@ -33,13 +33,7 @@ export class CompanyTypeDetail extends React.Component<ICompanyTypeDetailProps> 
                 <Translate contentKey="talentPipeFrontendApp.companyType.name">Name</Translate>
               </span>
             </dt>
-            <dd>{companyTypeEntity.name}</dd>
-            <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.companyType.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{companyTypeEntity.normalizedName}</dd>
+            <dd>{companyTypeEntity.name}</dd>s
             <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.companyType.description">Description</Translate>
@@ -64,7 +58,8 @@ export class CompanyTypeDetail extends React.Component<ICompanyTypeDetailProps> 
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/company-type/${companyTypeEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

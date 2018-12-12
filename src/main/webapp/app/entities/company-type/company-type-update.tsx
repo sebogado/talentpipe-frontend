@@ -103,19 +103,6 @@ export class CompanyTypeUpdate extends React.Component<ICompanyTypeUpdateProps, 
                   />
                 </AvGroup>
                 <AvGroup>
-                  <Label id="normalizedNameLabel" for="normalizedName">
-                    <Translate contentKey="talentPipeFrontendApp.companyType.normalizedName">Normalized Name</Translate>
-                  </Label>
-                  <AvField
-                    id="company-type-normalizedName"
-                    type="text"
-                    name="normalizedName"
-                    validate={{
-                      required: { value: true, errorMessage: translate('entity.validation.required') }
-                    }}
-                  />
-                </AvGroup>
-                <AvGroup>
                   <Label id="descriptionLabel" for="description">
                     <Translate contentKey="talentPipeFrontendApp.companyType.description">Description</Translate>
                   </Label>
@@ -144,14 +131,16 @@ export class CompanyTypeUpdate extends React.Component<ICompanyTypeUpdateProps, 
                   <AvField id="company-type-maxEmployeesQuantity" type="string" className="form-control" name="maxEmployeesQuantity" />
                 </AvGroup>
                 <Button tag={Link} id="cancel-save" to="/entity/company-type" replace color="info">
-                  <FontAwesomeIcon icon="arrow-left" />&nbsp;
+                  <FontAwesomeIcon icon="arrow-left" />
+                  &nbsp;
                   <span className="d-none d-md-inline">
                     <Translate contentKey="entity.action.back">Back</Translate>
                   </span>
                 </Button>
                 &nbsp;
                 <Button color="primary" id="save-entity" type="submit" disabled={updating}>
-                  <FontAwesomeIcon icon="save" />&nbsp;
+                  <FontAwesomeIcon icon="save" />
+                  &nbsp;
                   <Translate contentKey="entity.action.save">Save</Translate>
                 </Button>
               </AvForm>

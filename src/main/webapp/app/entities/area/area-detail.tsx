@@ -35,12 +35,6 @@ export class AreaDetail extends React.Component<IAreaDetailProps> {
             </dt>
             <dd>{areaEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.area.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{areaEntity.normalizedName}</dd>
-            <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.area.description">Description</Translate>
               </span>
@@ -52,7 +46,8 @@ export class AreaDetail extends React.Component<IAreaDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/area/${areaEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

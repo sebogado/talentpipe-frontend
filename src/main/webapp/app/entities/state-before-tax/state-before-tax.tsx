@@ -83,7 +83,8 @@ export class StateBeforeTax extends React.Component<IStateBeforeTaxProps, IState
         <h2 id="state-before-tax-heading">
           <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.home.title">State Before Taxes</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.home.createLabel">Create new State Before Tax</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class StateBeforeTax extends React.Component<IStateBeforeTaxProps, IState
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.stateBeforeTax.description">Description</Translate>{' '}
                   <FontAwesomeIcon icon="sort" />
@@ -140,7 +137,6 @@ export class StateBeforeTax extends React.Component<IStateBeforeTaxProps, IState
                     </Button>
                   </td>
                   <td>{stateBeforeTax.name}</td>
-                  <td>{stateBeforeTax.normalizedName}</td>
                   <td>{stateBeforeTax.description}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">

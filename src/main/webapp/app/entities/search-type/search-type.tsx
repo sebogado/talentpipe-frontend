@@ -83,7 +83,8 @@ export class SearchType extends React.Component<ISearchTypeProps, ISearchTypeSta
         <h2 id="search-type-heading">
           <Translate contentKey="talentPipeFrontendApp.searchType.home.title">Search Types</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.searchType.home.createLabel">Create new Search Type</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class SearchType extends React.Component<ISearchTypeProps, ISearchTypeSta
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.searchType.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.searchType.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.searchType.description">Description</Translate>{' '}
                   <FontAwesomeIcon icon="sort" />
@@ -140,7 +137,6 @@ export class SearchType extends React.Component<ISearchTypeProps, ISearchTypeSta
                     </Button>
                   </td>
                   <td>{searchType.name}</td>
-                  <td>{searchType.normalizedName}</td>
                   <td>{searchType.description}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">

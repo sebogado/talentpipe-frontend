@@ -83,7 +83,8 @@ export class CompanyType extends React.Component<ICompanyTypeProps, ICompanyType
         <h2 id="company-type-heading">
           <Translate contentKey="talentPipeFrontendApp.companyType.home.title">Company Types</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.companyType.home.createLabel">Create new Company Type</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class CompanyType extends React.Component<ICompanyTypeProps, ICompanyType
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.companyType.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.companyType.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.companyType.description">Description</Translate>{' '}
                   <FontAwesomeIcon icon="sort" />
@@ -148,7 +145,6 @@ export class CompanyType extends React.Component<ICompanyTypeProps, ICompanyType
                     </Button>
                   </td>
                   <td>{companyType.name}</td>
-                  <td>{companyType.normalizedName}</td>
                   <td>{companyType.description}</td>
                   <td>{companyType.minEmployeesQuantity}</td>
                   <td>{companyType.maxEmployeesQuantity}</td>

@@ -35,12 +35,6 @@ export class WorkTypeDetail extends React.Component<IWorkTypeDetailProps> {
             </dt>
             <dd>{workTypeEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.workType.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{workTypeEntity.normalizedName}</dd>
-            <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.workType.description">Description</Translate>
               </span>
@@ -64,7 +58,8 @@ export class WorkTypeDetail extends React.Component<IWorkTypeDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/work-type/${workTypeEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

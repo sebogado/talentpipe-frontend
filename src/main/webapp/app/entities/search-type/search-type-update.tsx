@@ -103,33 +103,22 @@ export class SearchTypeUpdate extends React.Component<ISearchTypeUpdateProps, IS
                   />
                 </AvGroup>
                 <AvGroup>
-                  <Label id="normalizedNameLabel" for="normalizedName">
-                    <Translate contentKey="talentPipeFrontendApp.searchType.normalizedName">Normalized Name</Translate>
-                  </Label>
-                  <AvField
-                    id="search-type-normalizedName"
-                    type="text"
-                    name="normalizedName"
-                    validate={{
-                      required: { value: true, errorMessage: translate('entity.validation.required') }
-                    }}
-                  />
-                </AvGroup>
-                <AvGroup>
                   <Label id="descriptionLabel" for="description">
                     <Translate contentKey="talentPipeFrontendApp.searchType.description">Description</Translate>
                   </Label>
                   <AvField id="search-type-description" type="text" name="description" />
                 </AvGroup>
                 <Button tag={Link} id="cancel-save" to="/entity/search-type" replace color="info">
-                  <FontAwesomeIcon icon="arrow-left" />&nbsp;
+                  <FontAwesomeIcon icon="arrow-left" />
+                  &nbsp;
                   <span className="d-none d-md-inline">
                     <Translate contentKey="entity.action.back">Back</Translate>
                   </span>
                 </Button>
                 &nbsp;
                 <Button color="primary" id="save-entity" type="submit" disabled={updating}>
-                  <FontAwesomeIcon icon="save" />&nbsp;
+                  <FontAwesomeIcon icon="save" />
+                  &nbsp;
                   <Translate contentKey="entity.action.save">Save</Translate>
                 </Button>
               </AvForm>

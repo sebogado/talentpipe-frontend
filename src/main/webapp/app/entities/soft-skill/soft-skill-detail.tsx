@@ -35,12 +35,6 @@ export class SoftSkillDetail extends React.Component<ISoftSkillDetailProps> {
             </dt>
             <dd>{softSkillEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.softSkill.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{softSkillEntity.normalizedName}</dd>
-            <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.softSkill.description">Description</Translate>
               </span>
@@ -52,7 +46,8 @@ export class SoftSkillDetail extends React.Component<ISoftSkillDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/soft-skill/${softSkillEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

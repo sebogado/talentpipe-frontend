@@ -35,12 +35,6 @@ export class SearchTypeDetail extends React.Component<ISearchTypeDetailProps> {
             </dt>
             <dd>{searchTypeEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.searchType.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{searchTypeEntity.normalizedName}</dd>
-            <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.searchType.description">Description</Translate>
               </span>
@@ -52,7 +46,8 @@ export class SearchTypeDetail extends React.Component<ISearchTypeDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/search-type/${searchTypeEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

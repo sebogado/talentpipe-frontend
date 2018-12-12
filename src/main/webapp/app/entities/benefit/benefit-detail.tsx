@@ -35,12 +35,6 @@ export class BenefitDetail extends React.Component<IBenefitDetailProps> {
             </dt>
             <dd>{benefitEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.benefit.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{benefitEntity.normalizedName}</dd>
-            <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.benefit.description">Description</Translate>
               </span>
@@ -52,7 +46,8 @@ export class BenefitDetail extends React.Component<IBenefitDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/benefit/${benefitEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

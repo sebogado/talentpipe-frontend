@@ -25,9 +25,8 @@ export class TechnicalSkillDetail extends React.Component<ITechnicalSkillDetailP
       <Row>
         <Col md="8">
           <h2>
-            <Translate contentKey="talentPipeFrontendApp.technicalSkill.detail.title">TechnicalSkill</Translate> [<b>
-              {technicalSkillEntity.id}
-            </b>]
+            <Translate contentKey="talentPipeFrontendApp.technicalSkill.detail.title">TechnicalSkill</Translate> [
+            <b>{technicalSkillEntity.id}</b>]
           </h2>
           <dl className="jh-entity-details">
             <dt>
@@ -36,12 +35,6 @@ export class TechnicalSkillDetail extends React.Component<ITechnicalSkillDetailP
               </span>
             </dt>
             <dd>{technicalSkillEntity.name}</dd>
-            <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.technicalSkill.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{technicalSkillEntity.normalizedName}</dd>
             <dt>
               <span id="description">
                 <Translate contentKey="talentPipeFrontendApp.technicalSkill.description">Description</Translate>
@@ -54,7 +47,8 @@ export class TechnicalSkillDetail extends React.Component<ITechnicalSkillDetailP
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/technical-skill/${technicalSkillEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

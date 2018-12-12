@@ -1,7 +1,6 @@
 export interface IArea {
   id?: number;
   name?: string;
-  normalizedName?: string;
   description?: string;
 }
 

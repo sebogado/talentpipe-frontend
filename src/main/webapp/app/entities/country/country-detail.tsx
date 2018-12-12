@@ -35,12 +35,6 @@ export class CountryDetail extends React.Component<ICountryDetailProps> {
             </dt>
             <dd>{countryEntity.name}</dd>
             <dt>
-              <span id="normalizedName">
-                <Translate contentKey="talentPipeFrontendApp.country.normalizedName">Normalized Name</Translate>
-              </span>
-            </dt>
-            <dd>{countryEntity.normalizedName}</dd>
-            <dt>
               <span id="code">
                 <Translate contentKey="talentPipeFrontendApp.country.code">Code</Translate>
               </span>
@@ -64,7 +58,8 @@ export class CountryDetail extends React.Component<ICountryDetailProps> {
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/country/${countryEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

@@ -83,7 +83,8 @@ export class Area extends React.Component<IAreaProps, IAreaState> {
         <h2 id="area-heading">
           <Translate contentKey="talentPipeFrontendApp.area.home.title">Areas</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.area.home.createLabel">Create new Area</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class Area extends React.Component<IAreaProps, IAreaState> {
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.area.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.area.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.area.description">Description</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -139,7 +136,6 @@ export class Area extends React.Component<IAreaProps, IAreaState> {
                     </Button>
                   </td>
                   <td>{area.name}</td>
-                  <td>{area.normalizedName}</td>
                   <td>{area.description}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">

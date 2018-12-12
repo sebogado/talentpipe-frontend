@@ -83,7 +83,8 @@ export class SoftSkill extends React.Component<ISoftSkillProps, ISoftSkillState>
         <h2 id="soft-skill-heading">
           <Translate contentKey="talentPipeFrontendApp.softSkill.home.title">Soft Skills</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="talentPipeFrontendApp.softSkill.home.createLabel">Create new Soft Skill</Translate>
           </Link>
         </h2>
@@ -120,10 +121,6 @@ export class SoftSkill extends React.Component<ISoftSkillProps, ISoftSkillState>
                 <th className="hand" onClick={this.sort('name')}>
                   <Translate contentKey="talentPipeFrontendApp.softSkill.name">Name</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={this.sort('normalizedName')}>
-                  <Translate contentKey="talentPipeFrontendApp.softSkill.normalizedName">Normalized Name</Translate>{' '}
-                  <FontAwesomeIcon icon="sort" />
-                </th>
                 <th className="hand" onClick={this.sort('description')}>
                   <Translate contentKey="talentPipeFrontendApp.softSkill.description">Description</Translate>{' '}
                   <FontAwesomeIcon icon="sort" />
@@ -140,7 +137,6 @@ export class SoftSkill extends React.Component<ISoftSkillProps, ISoftSkillState>
                     </Button>
                   </td>
                   <td>{softSkill.name}</td>
-                  <td>{softSkill.normalizedName}</td>
                   <td>{softSkill.description}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
