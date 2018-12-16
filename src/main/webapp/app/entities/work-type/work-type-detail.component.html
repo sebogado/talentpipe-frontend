@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="workType">
+            <h2><span jhiTranslate="talentpipeFrontendApp.workType.detail.title">Work Type</span> {{workType.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="talentpipeFrontendApp.workType.name">Name</span></dt>
+                <dd>
+                    <span>{{workType.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.workType.description">Description</span></dt>
+                <dd>
+                    <span>{{workType.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.workType.minQuantityHours">Min Quantity Hours</span></dt>
+                <dd>
+                    <span>{{workType.minQuantityHours}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.workType.maxQuantityHours">Max Quantity Hours</span></dt>
+                <dd>
+                    <span>{{workType.maxQuantityHours}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/work-type', workType.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

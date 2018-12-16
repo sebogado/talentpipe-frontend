@@ -1,15 +1,29 @@
 {
     "global": {
         "title": "TalentpipeFrontend",
-        "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
+        "browsehappy":
+            "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entidades",
+                "sector": "Sector",
+                "area": "Area",
+                "benefit": "Benefit",
+                "city": "City",
+                "country": "Country",
+                "companyType": "Company Type",
+                "searchType": "Search Type",
+                "softSkill": "Soft Skill",
+                "stateBeforeTax": "State Before Tax",
+                "technicalSkill": "Technical Skill",
+                "workType": "Work Type",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
+                "company": "Quiero registrar mi empresa",
+                "recruiter": "Quiero registrarme como recruiter",
                 "main": "Cuenta",
                 "settings": "Ajustes",
                 "password": "Contraseña",
@@ -34,14 +48,24 @@
             "language": "Idioma"
         },
         "form": {
+            "name": "Nombre de fantasia",
+            "name.placeholder": "Nombre de fantasia",
+            "contactName": "Tu nombre",
+            "contactName.placeholder": "Escribe aqui tu nombre",
+            "contactLastname": "Tu apellido",
+            "contactLastname.placeholder": "Escribe aqui tu apellido",
+            "taxId": "C.U.I.T",
+            "taxId.placeholder": "C.U.I.T. de la empresa a registrar",
+            "taxName": "Razon social",
+            "taxName.placeholder": "Razon social de la empresa a registrar",
             "username": "Usuario",
             "username.placeholder": "Nombre de usuario",
             "currentpassword": "Current password",
             "currentpassword.placeholder": "Current password",
-            "newpassword": "Nueva contraseña",
-            "newpassword.placeholder": "Nueva contraseña",
-            "confirmpassword": "Confirmación de la nueva contraseña",
-            "confirmpassword.placeholder": "Confirmación de la nueva contraseña",
+            "newpassword": "Inventa una contraseña",
+            "newpassword.placeholder": "Escribe aqui tu contraseña",
+            "confirmpassword": "Verifica tu contraseña aquí",
+            "confirmpassword.placeholder": "Necesitamos que verifiques tu contraseña",
             "email": "Correo electrónico",
             "email.placeholder": "Su correo electrónico"
         },
@@ -50,7 +74,8 @@
                 "authenticated": {
                     "prefix": "Si desea ",
                     "link": "iniciar una sesión",
-                    "suffix": ", puede intentar con las cuentas predeterminadas:<br/>- Administrator (usuario=\"admin\" y contraseña=\"admin\") <br/>- Usuario (usuario=\"user\" y contraseña=\"user\")."
+                    "suffix":
+                        ", puede intentar con las cuentas predeterminadas:<br/>- Administrator (usuario=\"admin\" y contraseña=\"admin\") <br/>- Usuario (usuario=\"user\" y contraseña=\"user\")."
                 },
                 "register": {
                     "noaccount": "¿No tienes una cuenta todavía?",

@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "sector": {
+            "home": {
+                "title": "Sectors",
+                "createLabel": "Criar um(a) novo(a) Sector",
+                "createOrEditLabel": "Criar ou editar um(a) Sector",
+                "search": "Search for Sector"
+            },
+            "created": "A new Sector is created with identifier {{ param }}",
+            "updated": "A Sector is updated with identifier {{ param }}",
+            "deleted": "A Sector is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Sector {{ id }}?"
+            },
+            "detail": {
+                "title": "Sector"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

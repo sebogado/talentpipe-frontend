@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "searchType": {
+            "home": {
+                "title": "Search Types",
+                "createLabel": "Criar um(a) novo(a) Search Type",
+                "createOrEditLabel": "Criar ou editar um(a) Search Type",
+                "search": "Search for Search Type"
+            },
+            "created": "A new Search Type is created with identifier {{ param }}",
+            "updated": "A Search Type is updated with identifier {{ param }}",
+            "deleted": "A Search Type is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Search Type {{ id }}?"
+            },
+            "detail": {
+                "title": "Search Type"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

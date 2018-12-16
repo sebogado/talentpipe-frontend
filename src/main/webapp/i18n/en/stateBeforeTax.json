@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "stateBeforeTax": {
+            "home": {
+                "title": "State Before Taxes",
+                "createLabel": "Create a new State Before Tax",
+                "createOrEditLabel": "Create or edit a State Before Tax",
+                "search": "Search for State Before Tax"
+            },
+            "created": "A new State Before Tax is created with identifier {{ param }}",
+            "updated": "A State Before Tax is updated with identifier {{ param }}",
+            "deleted": "A State Before Tax is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete State Before Tax {{ id }}?"
+            },
+            "detail": {
+                "title": "State Before Tax"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

@@ -26,10 +26,6 @@
             "fieldValidateRules": [
                 "required"
             ]
-        },
-        {
-            "fieldName": "sarasa",
-            "fieldType": "String"
         }
     ],
     "changelogDate": "20181117200151",

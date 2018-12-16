@@ -6,6 +6,7 @@ import { TalentpipeFrontendSharedModule } from 'app/shared';
 import {
     PasswordStrengthBarComponent,
     RegisterComponent,
+    CompanyRegisterComponent,
     ActivateComponent,
     PasswordComponent,
     PasswordResetInitComponent,
@@ -18,6 +19,7 @@ import {
     imports: [TalentpipeFrontendSharedModule, RouterModule.forChild(accountState)],
     declarations: [
         ActivateComponent,
+        CompanyRegisterComponent,
         RegisterComponent,
         PasswordComponent,
         PasswordStrengthBarComponent,

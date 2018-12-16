@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="companyType">
+            <h2><span jhiTranslate="talentpipeFrontendApp.companyType.detail.title">Company Type</span> {{companyType.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="talentpipeFrontendApp.companyType.name">Name</span></dt>
+                <dd>
+                    <span>{{companyType.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.companyType.description">Description</span></dt>
+                <dd>
+                    <span>{{companyType.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.companyType.minEmployeesQuantity">Min Employees Quantity</span></dt>
+                <dd>
+                    <span>{{companyType.minEmployeesQuantity}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.companyType.maxEmployeesQuantity">Max Employees Quantity</span></dt>
+                <dd>
+                    <span>{{companyType.maxEmployeesQuantity}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/company-type', companyType.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

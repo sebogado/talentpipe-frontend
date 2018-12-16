@@ -11,13 +11,6 @@
             ]
         },
         {
-            "fieldName": "normalizedName",
-            "fieldType": "String",
-            "fieldValidateRules": [
-                "required"
-            ]
-        },
-        {
             "fieldName": "description",
             "fieldType": "String"
         },

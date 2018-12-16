@@ -1,0 +1,78 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-work-type-heading" jhiTranslate="talentpipeFrontendApp.workType.home.createOrEditLabel">Create or edit a Work Type</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!workType.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="workType.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.workType.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="workType.name" required/>
+                    <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.workType.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                        [(ngModel)]="workType.description" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.workType.minQuantityHours" for="field_minQuantityHours">Min Quantity Hours</label>
+                    <input type="number" class="form-control" name="minQuantityHours" id="field_minQuantityHours"
+                        [(ngModel)]="workType.minQuantityHours" required min="0" jhiMin="0"/>
+                    <div [hidden]="!(editForm.controls.minQuantityHours?.dirty && editForm.controls.minQuantityHours?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.minQuantityHours?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.minQuantityHours?.errors?.min" jhiTranslate="entity.validation.min" translateValues="{ min: 0 }">
+                            This field should be at least 0.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.minQuantityHours?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.workType.maxQuantityHours" for="field_maxQuantityHours">Max Quantity Hours</label>
+                    <input type="number" class="form-control" name="maxQuantityHours" id="field_maxQuantityHours"
+                        [(ngModel)]="workType.maxQuantityHours" required max="24" jhiMax="24"/>
+                    <div [hidden]="!(editForm.controls.maxQuantityHours?.dirty && editForm.controls.maxQuantityHours?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.maxQuantityHours?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.maxQuantityHours?.errors?.max" jhiTranslate="entity.validation.max" translateValues="{ max: 24 }">
+                            This field cannot be more than 24.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.maxQuantityHours?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "technicalSkill": {
+            "home": {
+                "title": "Technical Skills",
+                "createLabel": "Criar um(a) novo(a) Technical Skill",
+                "createOrEditLabel": "Criar ou editar um(a) Technical Skill",
+                "search": "Search for Technical Skill"
+            },
+            "created": "A new Technical Skill is created with identifier {{ param }}",
+            "updated": "A Technical Skill is updated with identifier {{ param }}",
+            "deleted": "A Technical Skill is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Technical Skill {{ id }}?"
+            },
+            "detail": {
+                "title": "Technical Skill"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}
