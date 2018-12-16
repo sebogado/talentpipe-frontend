@@ -5,15 +5,15 @@
     },
     "jhipsterVersion": "5.7.0",
     "applicationType": "monolith",
-    "baseName": "talentPipeFrontend",
-    "clientFramework": "react",
+    "baseName": "talentpipeFrontend",
+    "clientFramework": "angularX",
     "useSass": false,
     "clientPackageManager": "npm",
     "authenticationType": "jwt",
     "cacheProvider": "no",
-    "databaseType": "mySql",
-    "devDatabaseType": "mySql",
-    "prodDatabaseType": "mySql",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
     "testFrameworks": [
       "protractor"
     ],
@@ -24,7 +24,7 @@
     "languages": [
       "es",
       "en",
-      "pt-br"
+      "pt-pt"
     ],
     "skipServer": true
   }
