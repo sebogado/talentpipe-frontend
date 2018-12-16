@@ -14,9 +14,9 @@ export const registerRoute: Route = {
 
 export const companyRegisterRoute: Route = {
     path: 'register/company',
-        component: CompanyRegisterComponent,
+    component: CompanyRegisterComponent,
     data: {
-    authorities: [],
+        authorities: [],
         pageTitle: 'register.title'
     }
-}
+};
