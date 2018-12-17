@@ -97,19 +97,19 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="login" jhiTranslate="global.form.name">Nombre fantasia</label>
-                            <input type="text" class="form-control" [(ngModel)]="registerAccount.name" id="name" name="name" #name="ngModel" placeholder="{{'global.form.name.placeholder' | translate}}"
+                            <label class="form-control-label" for="login" jhiTranslate="global.form.companyName">Nombre fantasia</label>
+                            <input type="text" class="form-control" [(ngModel)]="registerAccount.companyName" id="companyName" name="companyName" #companyName="ngModel" placeholder="{{'global.form.companyName.placeholder' | translate}}"
                                    required minlength="1" maxlength="50">
-                            <div *ngIf="name.dirty && name.invalid">
-                                <small class="form-text text-danger" *ngIf="name.errors.required" jhiTranslate="register.messages.validate.name.required">
+                            <div *ngIf="companyName.dirty && companyName.invalid">
+                                <small class="form-text text-danger" *ngIf="companyName.errors.required" jhiTranslate="register.messages.validate.companyName.required">
                                     The tax id is required
                                 </small>
-                                <small class="form-text text-danger" *ngIf="name.errors.minlength"
-                                       jhiTranslate="register.messages.validate.name.minlength">
+                                <small class="form-text text-danger" *ngIf="companyName.errors.minlength"
+                                       jhiTranslate="register.messages.validate.companyName.minlength">
                                     Your username is required to be at least 1 character.
                                 </small>
-                                <small class="form-text text-danger" *ngIf="name.errors.maxlength"
-                                       jhiTranslate="register.messages.validate.name.maxlength">
+                                <small class="form-text text-danger" *ngIf="companyName.errors.maxlength"
+                                       jhiTranslate="register.messages.validate.companyName.maxlength">
                                     Your username cannot be longer than 50 characters.
                                 </small>
                             </div>
@@ -139,19 +139,61 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="login" jhiTranslate="global.form.contactLastname">Apellido</label>
-                            <input type="text" class="form-control" [(ngModel)]="registerAccount.contactLastname" id="contactLastname" name="contactLastname" #contactLastname="ngModel" placeholder="{{'global.form.contactLastname.placeholder' | translate}}"
+                            <label class="form-control-label" for="login" jhiTranslate="global.form.contactLastName">Apellido</label>
+                            <input type="text" class="form-control" [(ngModel)]="registerAccount.contactLastName" id="contactLastName" name="contactLastName" #contactLastName="ngModel" placeholder="{{'global.form.contactLastName.placeholder' | translate}}"
                                    required minlength="1" maxlength="50">
-                            <div *ngIf="contactLastname.dirty && contactLastname.invalid">
-                                <small class="form-text text-danger" *ngIf="contactLastname.errors.required" jhiTranslate="register.messages.validate.name.required">
+                            <div *ngIf="contactLastName.dirty && contactLastName.invalid">
+                                <small class="form-text text-danger" *ngIf="contactLastName.errors.required" jhiTranslate="register.messages.validate.contactLastName.required">
                                     The tax id is required
                                 </small>
-                                <small class="form-text text-danger" *ngIf="contactLastname.errors.minlength"
-                                       jhiTranslate="register.messages.validate.name.minlength">
+                                <small class="form-text text-danger" *ngIf="contactLastName.errors.minlength"
+                                       jhiTranslate="register.messages.validate.contactLastName.minlength">
                                     Your username is required to be at least 1 character.
                                 </small>
-                                <small class="form-text text-danger" *ngIf="contactLastname.errors.maxlength"
-                                       jhiTranslate="register.messages.validate.name.maxlength">
+                                <small class="form-text text-danger" *ngIf="contactLastName.errors.maxlength"
+                                       jhiTranslate="register.messages.validate.contactLastName.maxlength">
+                                    Your username cannot be longer than 50 characters.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-control-label" for="phonePrefix" jhiTranslate="global.form.phonePrefix">Prefijo telefonico</label>
+                            <input type="text" class="form-control" [(ngModel)]="registerAccount.phonePrefix" id="phonePrefix" name="phonePrefix" #phonePrefix="ngModel" placeholder="{{'global.form.phonePrefix.placeholder' | translate}}"
+                                   required minlength="1" maxlength="50">
+                            <div *ngIf="phonePrefix.dirty && phonePrefix.invalid">
+                                <small class="form-text text-danger" *ngIf="phonePrefix.errors.required" jhiTranslate="register.messages.validate.phonePrefix.required">
+                                    The tax id is required
+                                </small>
+                                <small class="form-text text-danger" *ngIf="phonePrefix.errors.minlength"
+                                       jhiTranslate="register.messages.validate.phonePrefix.minlength">
+                                    Your username is required to be at least 1 character.
+                                </small>
+                                <small class="form-text text-danger" *ngIf="phonePrefix.errors.maxlength"
+                                       jhiTranslate="register.messages.validate.phonePrefix.maxlength">
+                                    Your username cannot be longer than 50 characters.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-control-label" for="phoneNumber" jhiTranslate="global.form.phoneNumber">Apellido</label>
+                            <input type="text" class="form-control" [(ngModel)]="registerAccount.phoneNumber" id="phoneNumber" name="phoneNumber" #phoneNumber="ngModel" placeholder="{{'global.form.phoneNumber.placeholder' | translate}}"
+                                   required minlength="1" maxlength="50">
+                            <div *ngIf="phoneNumber.dirty && phoneNumber.invalid">
+                                <small class="form-text text-danger" *ngIf="phoneNumber.errors.required" jhiTranslate="register.messages.validate.phoneNumber.required">
+                                    The tax id is required
+                                </small>
+                                <small class="form-text text-danger" *ngIf="phoneNumber.errors.minlength"
+                                       jhiTranslate="register.messages.validate.phoneNumber.minlength">
+                                    Your username is required to be at least 1 character.
+                                </small>
+                                <small class="form-text text-danger" *ngIf="phoneNumber.errors.maxlength"
+                                       jhiTranslate="register.messages.validate.phoneNumber.maxlength">
                                     Your username cannot be longer than 50 characters.
                                 </small>
                             </div>
@@ -206,9 +248,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label class="form-control-label" for="acceptTermsOfService" jhiTranslate="global.form.aceptTermsOfService">Accept terms of service</label>
                             <input type="checkbox" class="form-control" id="acceptTermsOfService" name="acceptTermsOfService" #acceptTermsOfService="ngModel" placeholder="{{'global.form.acceptTermsOfService.placeholder' | translate}}"
-                                   [(ngModel)]="registerAccount.acceptTermsOfService" required>
+                            [(ngModel)]="registerAccount.acceptTermsOfService" required>
+                            <label class="form-control-label" for="acceptTermsOfService" jhiTranslate="global.form.aceptTermsOfService">Accept terms of service</label>
                             <div *ngIf="acceptTermsOfService.dirty && acceptTermsOfService.invalid">
                                 <small class="form-text text-danger" *ngIf="acceptTermsOfService.errors.required"
                                        jhiTranslate="global.messages.validate.newpassword.required">
@@ -221,9 +263,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label class="form-control-label" for="wantNewsLetter" jhiTranslate="global.form.wantNewsLetter">Accept terms of service</label>
                             <input type="checkbox" class="form-control" id="wantNewsLetter" name="wantNewsLetter" #wantNewsLetter="ngModel" placeholder="{{'global.form.wantNewsLetter.placeholder' | translate}}"
                                    [(ngModel)]="registerAccount.wantNewsLetter" required>
+                            <label class="form-control-label" for="wantNewsLetter" jhiTranslate="global.form.wantNewsLetter">Accept terms of service</label>
                             <div *ngIf="wantNewsLetter.dirty && wantNewsLetter.invalid">
                                 <small class="form-text text-danger" *ngIf="wantNewsLetter.errors.required"
                                        jhiTranslate="global.messages.validate.newpassword.required">

@@ -48,7 +48,7 @@ export class CompanyRegisterComponent implements OnInit, AfterViewInit {
             this.errorEmailExists = null;
             this.languageService.getCurrent().then(key => {
                 this.registerAccount.langKey = key;
-                this.registerService.save(this.registerAccount).subscribe(
+                this.registerService.saveCompanyRegister(this.registerAccount).subscribe(
                     () => {
                         this.success = true;
                     },
