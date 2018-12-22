@@ -14,4 +14,8 @@ export class Register {
     saveCompanyRegister(account: any): Observable<any> {
         return this.http.post(SERVER_API_URL + 'api/companies/register', account);
     }
+
+    saveRecruiterRegister(registerAccount: any): Observable<any> {
+        return this.http.post(SERVER_API_URL + 'api/recruiters/register', registerAccount);
+    }
 }

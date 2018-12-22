@@ -13,6 +13,7 @@ export * from './password-reset/init/password-reset-init.service';
 export * from './password-reset/init/password-reset-init.route';
 export * from './register/register.component';
 export * from './register/company/company.register.component';
+export * from './register/recruiter/recruiter.register.component';
 export * from './register/register.service';
 export * from './register/register.route';
 export * from './settings/settings.component';

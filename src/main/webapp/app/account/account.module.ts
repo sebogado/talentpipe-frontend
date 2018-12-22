@@ -12,7 +12,8 @@ import {
     PasswordResetInitComponent,
     PasswordResetFinishComponent,
     SettingsComponent,
-    accountState
+    accountState,
+    RecruiterRegisterComponent
 } from './';
 
 @NgModule({
@@ -20,6 +21,7 @@ import {
     declarations: [
         ActivateComponent,
         CompanyRegisterComponent,
+        RecruiterRegisterComponent,
         RegisterComponent,
         PasswordComponent,
         PasswordStrengthBarComponent,

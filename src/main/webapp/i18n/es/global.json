@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "TalentpipeFrontend",
+        "title": "Openhire",
         "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
@@ -55,8 +55,8 @@
             "phoneNumber.placeholder": "Ingresa aqui tu numero sin prefijos",
             "contactName": "Tu nombre",
             "contactName.placeholder": "Escribe aqui tu nombre",
-            "contactLastname": "Tu apellido",
-            "contactLastname.placeholder": "Escribe aqui tu apellido",
+            "contactLastName": "Tu apellido",
+            "contactLastName.placeholder": "Escribe aqui tu apellido",
             "taxId": "C.U.I.T",
             "taxId.placeholder": "C.U.I.T. de la empresa a registrar",
             "taxName": "Razon social",
