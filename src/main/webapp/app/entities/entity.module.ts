@@ -11,6 +11,10 @@ import { TalentpipeFrontendSoftSkillModule } from './soft-skill/soft-skill.modul
 import { TalentpipeFrontendStateBeforeTaxModule } from './state-before-tax/state-before-tax.module';
 import { TalentpipeFrontendTechnicalSkillModule } from './technical-skill/technical-skill.module';
 import { TalentpipeFrontendWorkTypeModule } from './work-type/work-type.module';
+import { TalentpipeFrontendSearchStatusModule } from './search-status/search-status.module';
+import { TalentpipeFrontendExpertiseLevelModule } from './expertise-level/expertise-level.module';
+import { TalentpipeFrontendSearchRequestModule } from './search-request/search-request.module';
+import { TalentpipeFrontendCompanyModule } from './company/company.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -27,6 +31,10 @@ import { TalentpipeFrontendWorkTypeModule } from './work-type/work-type.module';
         TalentpipeFrontendStateBeforeTaxModule,
         TalentpipeFrontendTechnicalSkillModule,
         TalentpipeFrontendWorkTypeModule,
+        TalentpipeFrontendSearchStatusModule,
+        TalentpipeFrontendExpertiseLevelModule,
+        TalentpipeFrontendSearchRequestModule,
+        TalentpipeFrontendCompanyModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

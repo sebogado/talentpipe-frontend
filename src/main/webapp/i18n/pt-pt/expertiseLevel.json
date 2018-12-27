@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "expertiseLevel": {
+            "home": {
+                "title": "Expertise Levels",
+                "createLabel": "Criar um(a) novo(a) Expertise Level",
+                "createOrEditLabel": "Criar ou editar um(a) Expertise Level",
+                "search": "Search for Expertise Level"
+            },
+            "created": "A new Expertise Level is created with identifier {{ param }}",
+            "updated": "A Expertise Level is updated with identifier {{ param }}",
+            "deleted": "A Expertise Level is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Expertise Level {{ id }}?"
+            },
+            "detail": {
+                "title": "Expertise Level"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

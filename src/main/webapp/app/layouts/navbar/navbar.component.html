@@ -18,7 +18,7 @@
                     </span>
                 </a>
             </li>
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <li *ngSwitchCase="false" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="/register/company" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="user-plus" fixedWidth="true"></fa-icon>
@@ -26,7 +26,7 @@
                     </span>
                 </a>
             </li>
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <li *ngSwitchCase="false" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="/register/recruiter" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="user-plus" fixedWidth="true"></fa-icon>
@@ -109,6 +109,30 @@
                         <a class="dropdown-item" routerLink="work-type" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
                             <span jhiTranslate="global.menu.entities.workType">Work Type</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="search-status" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span jhiTranslate="global.menu.entities.searchStatus">Search Status</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="expertise-level" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span jhiTranslate="global.menu.entities.expertiseLevel">Expertise Level</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="search-request" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span jhiTranslate="global.menu.entities.searchRequest">Search Request</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="company" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span jhiTranslate="global.menu.entities.company">Company</span>
                         </a>
                     </li>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->

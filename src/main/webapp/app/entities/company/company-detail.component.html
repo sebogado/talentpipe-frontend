@@ -1,0 +1,89 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="company">
+            <h2><span jhiTranslate="talentpipeFrontendApp.company.detail.title">Company</span> {{company.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.taxName">Tax Name</span></dt>
+                <dd>
+                    <span>{{company.taxName}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.taxId">Tax Id</span></dt>
+                <dd>
+                    <span>{{company.taxId}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.email">Email</span></dt>
+                <dd>
+                    <span>{{company.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.name">Name</span></dt>
+                <dd>
+                    <span>{{company.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.street">Street</span></dt>
+                <dd>
+                    <span>{{company.street}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.floor">Floor</span></dt>
+                <dd>
+                    <span>{{company.floor}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.number">Number</span></dt>
+                <dd>
+                    <span>{{company.number}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.apartment">Apartment</span></dt>
+                <dd>
+                    <span>{{company.apartment}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{company.postalCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.phone">Phone</span></dt>
+                <dd>
+                    <span>{{company.phone}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.contactName">Contact Name</span></dt>
+                <dd>
+                    <span>{{company.contactName}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.mainUser">Main User</span></dt>
+                <dd>
+                    {{company.mainUser?.login}}
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.sector">Sector</span></dt>
+                <dd>
+                    <div *ngIf="company.sector">
+                        <a [routerLink]="['/sector', company.sector?.id, 'view']">{{company.sector?.name}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.city">City</span></dt>
+                <dd>
+                    <div *ngIf="company.city">
+                        <a [routerLink]="['/city', company.city?.id, 'view']">{{company.city?.name}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.company.companyType">Company Type</span></dt>
+                <dd>
+                    <div *ngIf="company.companyType">
+                        <a [routerLink]="['/company-type', company.companyType?.id, 'view']">{{company.companyType?.name}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/company', company.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

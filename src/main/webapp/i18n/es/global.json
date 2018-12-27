@@ -18,6 +18,10 @@
                 "stateBeforeTax": "State Before Tax",
                 "technicalSkill": "Technical Skill",
                 "workType": "Work Type",
+                "searchStatus": "Search Status",
+                "expertiseLevel": "Expertise Level",
+                "searchRequest": "Search Request",
+                "company": "Company",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

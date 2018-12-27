@@ -1,0 +1,33 @@
+{
+    "talentpipeFrontendApp": {
+        "searchRequest": {
+            "home": {
+                "title": "Search Requests",
+                "createLabel": "Create a new Search Request",
+                "createOrEditLabel": "Create or edit a Search Request",
+                "search": "Search for Search Request"
+            },
+            "created": "A new Search Request is created with identifier {{ param }}",
+            "updated": "A Search Request is updated with identifier {{ param }}",
+            "deleted": "A Search Request is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Search Request {{ id }}?"
+            },
+            "detail": {
+                "title": "Search Request"
+            },
+            "name": "Name",
+            "description": "Description",
+            "minSalary": "Min Salary",
+            "maxSalary": "Max Salary",
+            "position": "Position",
+            "company": "Company",
+            "ExpertiseLevel": "Expertise Level",
+            "requiredTechnicalSkills": "Required Technical Skills",
+            "nonRequiredTechnicalSkills": "Non Required Technical Skills",
+            "requiredSoftSkills": "Required Soft Skills",
+            "nonRequiredSoftSkills": "Non Required Soft Skills",
+            "benefits": "Benefits"
+        }
+    }
+}

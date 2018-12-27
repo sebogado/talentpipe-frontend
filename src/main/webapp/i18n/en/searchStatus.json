@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "searchStatus": {
+            "home": {
+                "title": "Search Statuses",
+                "createLabel": "Create a new Search Status",
+                "createOrEditLabel": "Create or edit a Search Status",
+                "search": "Search for Search Status"
+            },
+            "created": "A new Search Status is created with identifier {{ param }}",
+            "updated": "A Search Status is updated with identifier {{ param }}",
+            "deleted": "A Search Status is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Search Status {{ id }}?"
+            },
+            "detail": {
+                "title": "Search Status"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

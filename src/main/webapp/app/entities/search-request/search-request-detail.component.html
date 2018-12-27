@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="searchRequest">
+            <h2><span jhiTranslate="talentpipeFrontendApp.searchRequest.detail.title">Search Request</span> {{searchRequest.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.name">Name</span></dt>
+                <dd>
+                    <span>{{searchRequest.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.description">Description</span></dt>
+                <dd>
+                    <span>{{searchRequest.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.minSalary">Min Salary</span></dt>
+                <dd>
+                    <span>{{searchRequest.minSalary}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.maxSalary">Max Salary</span></dt>
+                <dd>
+                    <span>{{searchRequest.maxSalary}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.position">Position</span></dt>
+                <dd>
+                    <span>{{searchRequest.position}}</span>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.company">Company</span></dt>
+                <dd>
+                    <div *ngIf="searchRequest.company">
+                        <a [routerLink]="['/company', searchRequest.company?.id, 'view']">{{searchRequest.company?.taxName}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="talentpipeFrontendApp.searchRequest.ExpertiseLevel">Expertise Level</span></dt>
+                <dd>
+                    <div *ngIf="searchRequest.expertiseLevel">
+                        <a [routerLink]="['/expertise-level', searchRequest.expertiseLevel?.id, 'view']">{{searchRequest.expertiseLevel?.name}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/search-request', searchRequest.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
