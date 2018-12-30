@@ -1,0 +1,24 @@
+{
+    "talentpipeFrontendApp": {
+        "role": {
+            "home": {
+                "title": "Roles",
+                "createLabel": "Criar um(a) novo(a) Role",
+                "createOrEditLabel": "Criar ou editar um(a) Role",
+                "search": "Search for Role"
+            },
+            "created": "A new Role is created with identifier {{ param }}",
+            "updated": "A Role is updated with identifier {{ param }}",
+            "deleted": "A Role is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Role {{ id }}?"
+            },
+            "detail": {
+                "title": "Role"
+            },
+            "name": "Name",
+            "description": "Description",
+            "authorities": "Authorities"
+        }
+    }
+}

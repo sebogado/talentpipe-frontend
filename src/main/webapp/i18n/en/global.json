@@ -22,6 +22,8 @@
                 "expertiseLevel": "Expertise Level",
                 "searchRequest": "Search Request",
                 "company": "Company",
+                "authority": "Authority",
+                "role": "Role",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

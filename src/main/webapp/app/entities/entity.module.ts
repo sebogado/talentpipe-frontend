@@ -15,6 +15,8 @@ import { TalentpipeFrontendSearchStatusModule } from './search-status/search-sta
 import { TalentpipeFrontendExpertiseLevelModule } from './expertise-level/expertise-level.module';
 import { TalentpipeFrontendSearchRequestModule } from './search-request/search-request.module';
 import { TalentpipeFrontendCompanyModule } from './company/company.module';
+import { TalentpipeFrontendAuthorityModule } from './authority/authority.module';
+import { TalentpipeFrontendRoleModule } from './role/role.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -35,6 +37,8 @@ import { TalentpipeFrontendCompanyModule } from './company/company.module';
         TalentpipeFrontendExpertiseLevelModule,
         TalentpipeFrontendSearchRequestModule,
         TalentpipeFrontendCompanyModule,
+        TalentpipeFrontendAuthorityModule,
+        TalentpipeFrontendRoleModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

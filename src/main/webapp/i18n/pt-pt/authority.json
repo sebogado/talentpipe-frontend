@@ -1,0 +1,23 @@
+{
+    "talentpipeFrontendApp": {
+        "authority": {
+            "home": {
+                "title": "Authorities",
+                "createLabel": "Criar um(a) novo(a) Authority",
+                "createOrEditLabel": "Criar ou editar um(a) Authority",
+                "search": "Search for Authority"
+            },
+            "created": "A new Authority is created with identifier {{ param }}",
+            "updated": "A Authority is updated with identifier {{ param }}",
+            "deleted": "A Authority is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Authority {{ id }}?"
+            },
+            "detail": {
+                "title": "Authority"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

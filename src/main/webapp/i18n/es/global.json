@@ -22,6 +22,8 @@
                 "expertiseLevel": "Expertise Level",
                 "searchRequest": "Search Request",
                 "company": "Company",
+                "authority": "Authority",
+                "role": "Role",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -51,6 +53,10 @@
             "language": "Idioma"
         },
         "form": {
+            "name": "Nombre",
+            "name.placeholder": "Nombre",
+            "lastName": "Apellido",
+            "lastName.placeholder": "Apellido",
             "companyName": "Nombre de fantasia",
             "companyName.placeholder": "Nombre de fantasia",
             "phonePrefix": "Prefijo",

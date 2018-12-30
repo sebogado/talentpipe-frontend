@@ -7,7 +7,6 @@ import { JhiAlertService } from 'ng-jhipster';
 import { ISearchRequest } from 'app/shared/model/search-request.model';
 import { SearchRequestService } from './search-request.service';
 import { ICompany } from 'app/shared/model/company.model';
-import { CompanyService } from 'app/entities/company';
 import { IExpertiseLevel } from 'app/shared/model/expertise-level.model';
 import { ExpertiseLevelService } from 'app/entities/expertise-level';
 
@@ -26,7 +25,6 @@ export class SearchRequestUpdateComponent implements OnInit {
     constructor(
         private jhiAlertService: JhiAlertService,
         private searchRequestService: SearchRequestService,
-        private companyService: CompanyService,
         private expertiseLevelService: ExpertiseLevelService,
         private activatedRoute: ActivatedRoute
     ) {}
@@ -36,12 +34,6 @@ export class SearchRequestUpdateComponent implements OnInit {
         this.activatedRoute.data.subscribe(({ searchRequest }) => {
             this.searchRequest = searchRequest;
         });
-        this.companyService.query().subscribe(
-            (res: HttpResponse<ICompany[]>) => {
-                this.companies = res.body;
-            },
-            (res: HttpErrorResponse) => this.onError(res.message)
-        );
         this.expertiseLevelService.query().subscribe(
             (res: HttpResponse<IExpertiseLevel[]>) => {
                 this.expertiselevels = res.body;
