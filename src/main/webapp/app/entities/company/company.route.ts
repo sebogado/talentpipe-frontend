@@ -29,6 +29,18 @@ export class CompanyResolve implements Resolve<ICompany> {
     }
 }
 
+@Injectable({ providedIn: 'root' })
+export class MyCompanyResolve implements Resolve<ICompany> {
+    constructor(private service: CompanyService) {}
+
+    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Company> {
+        return this.service.findMyCompany().pipe(
+            filter((response: HttpResponse<Company>) => response.ok),
+            map((company: HttpResponse<Company>) => company.body)
+        );
+    }
+}
+
 export const companyRoute: Routes = [
     {
         path: 'company',
@@ -63,6 +75,18 @@ export const companyRoute: Routes = [
         },
         data: {
             authorities: ['ROLE_USER'],
+            pageTitle: 'talentpipeFrontendApp.company.home.title'
+        },
+        canActivate: [UserRouteAccessService]
+    },
+    {
+        path: 'my-company',
+        component: CompanyUpdateComponent,
+        resolve: {
+            company: MyCompanyResolve
+        },
+        data: {
+            authorities: ['ROLE_COMPANY_ADMIN'],
             pageTitle: 'talentpipeFrontendApp.company.home.title'
         },
         canActivate: [UserRouteAccessService]

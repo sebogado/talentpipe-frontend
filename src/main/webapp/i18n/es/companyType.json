@@ -2,24 +2,24 @@
     "talentpipeFrontendApp": {
         "companyType": {
             "home": {
-                "title": "Company Types",
-                "createLabel": "Crear nuevo Company Type",
-                "createOrEditLabel": "Crear o editar Company Type",
-                "search": "Search for Company Type"
+                "title": "Tipos de empresa",
+                "createLabel": "Crear nueva empresa",
+                "createOrEditLabel": "Crear o editar Empresa",
+                "search": "Buscar tipo de emrpesa"
             },
-            "created": "Un nuevo Company Type ha sido creado con el identificador {{ param }}",
-            "updated": "Un Company Type ha sido actualizado con el identificador {{ param }}",
-            "deleted": "Un Company Type ha sido eliminado con el identificador {{ param }}",
+            "created": "Un nuevo Tipo de empresa ha sido creado con el identificador {{ param }}",
+            "updated": "Un Tipo de empresa ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Tipo de empresa ha sido eliminado con el identificador {{ param }}",
             "delete": {
-                "question": "¿Seguro que quiere eliminar Company Type {{ id }}?"
+                "question": "¿Seguro que quiere eliminar el Tipo de empresa {{ id }}?"
             },
             "detail": {
                 "title": "Company Type"
             },
-            "name": "Name",
-            "description": "Description",
-            "minEmployeesQuantity": "Min Employees Quantity",
-            "maxEmployeesQuantity": "Max Employees Quantity"
+            "name": "Nombre",
+            "description": "Descripción",
+            "minEmployeesQuantity": "Cantidad mínima de empleados",
+            "maxEmployeesQuantity": "Cantidad máxima de empleados"
         }
     }
 }

@@ -2,22 +2,22 @@
     "talentpipeFrontendApp": {
         "authority": {
             "home": {
-                "title": "Authorities",
-                "createLabel": "Crear nuevo Authority",
-                "createOrEditLabel": "Crear o editar Authority",
-                "search": "Search for Authority"
+                "title": "Permisos",
+                "createLabel": "Crear nuevo permiso",
+                "createOrEditLabel": "Crear o editar permiso",
+                "search": "Buscar permisos"
             },
-            "created": "Un nuevo Authority ha sido creado con el identificador {{ param }}",
-            "updated": "Un Authority ha sido actualizado con el identificador {{ param }}",
-            "deleted": "Un Authority ha sido eliminado con el identificador {{ param }}",
+            "created": "Un nuevo permiso ha sido creado con el identificador {{ param }}",
+            "updated": "Un permiso ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un permiso ha sido eliminado con el identificador {{ param }}",
             "delete": {
-                "question": "¿Seguro que quiere eliminar Authority {{ id }}?"
+                "question": "¿Seguro que quiere eliminar el permiso {{ id }}?"
             },
             "detail": {
-                "title": "Authority"
+                "title": "Permisos"
             },
-            "name": "Name",
-            "description": "Description"
+            "name": "nombre",
+            "description": "descripcion"
         }
     }
 }

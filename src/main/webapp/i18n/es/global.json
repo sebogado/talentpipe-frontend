@@ -4,8 +4,11 @@
         "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
+            "accionesAdmin": "Acciones",
+            "accionesRecruiter": "Acciones",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
+                "myCompany": "Mi empresa",
                 "main": "Entidades",
                 "sector": "Sector",
                 "area": "Area",
@@ -53,6 +56,8 @@
             "language": "Idioma"
         },
         "form": {
+            "acceptTermsOfService": "Acepto los terminos y condiciones",
+            "wantNewsLetter": "Quiero recibir noticias sobre Openhire",
             "name": "Nombre",
             "name.placeholder": "Nombre",
             "lastName": "Apellido",

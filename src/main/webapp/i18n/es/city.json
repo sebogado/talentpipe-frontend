@@ -2,23 +2,23 @@
     "talentpipeFrontendApp": {
         "city": {
             "home": {
-                "title": "Cities",
-                "createLabel": "Crear nuevo City",
-                "createOrEditLabel": "Crear o editar City",
-                "search": "Search for City"
+                "title": "Ciudades",
+                "createLabel": "Crear nueva Ciudad",
+                "createOrEditLabel": "Crear o editar Ciudad",
+                "search": "Buscar ciudad"
             },
-            "created": "Un nuevo City ha sido creado con el identificador {{ param }}",
-            "updated": "Un City ha sido actualizado con el identificador {{ param }}",
-            "deleted": "Un City ha sido eliminado con el identificador {{ param }}",
+            "created": "Una nueva Ciudad ha sido creada con el identificador {{ param }}",
+            "updated": "Un Ciudad ha sido actualizada con el identificador {{ param }}",
+            "deleted": "Un Ciudad ha sido eliminada con el identificador {{ param }}",
             "delete": {
                 "question": "¿Seguro que quiere eliminar City {{ id }}?"
             },
             "detail": {
                 "title": "City"
             },
-            "name": "Name",
-            "postalCode": "Postal Code",
-            "country": "Country"
+            "name": "Nombre",
+            "postalCode": "Codigo postal",
+            "country": "Paìs"
         }
     }
 }

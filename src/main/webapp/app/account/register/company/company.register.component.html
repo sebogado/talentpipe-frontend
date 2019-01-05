@@ -248,9 +248,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
+                            <label class="form-control-label" for="acceptTermsOfService" jhiTranslate="global.form.acceptTermsOfService">Accept terms of service</label>
                             <input type="checkbox" class="form-control" id="acceptTermsOfService" name="acceptTermsOfService" #acceptTermsOfService="ngModel" placeholder="{{'global.form.acceptTermsOfService.placeholder' | translate}}"
                             [(ngModel)]="registerAccount.acceptTermsOfService" required>
-                            <label class="form-control-label" for="acceptTermsOfService" jhiTranslate="global.form.aceptTermsOfService">Accept terms of service</label>
                             <div *ngIf="acceptTermsOfService.dirty && acceptTermsOfService.invalid">
                                 <small class="form-text text-danger" *ngIf="acceptTermsOfService.errors.required"
                                        jhiTranslate="global.messages.validate.newpassword.required">
@@ -263,9 +263,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
+                            <label class="form-control-label" for="wantNewsLetter" jhiTranslate="global.form.wantNewsLetter">Accept terms of service</label>
                             <input type="checkbox" class="form-control" id="wantNewsLetter" name="wantNewsLetter" #wantNewsLetter="ngModel" placeholder="{{'global.form.wantNewsLetter.placeholder' | translate}}"
                                    [(ngModel)]="registerAccount.wantNewsLetter" required>
-                            <label class="form-control-label" for="wantNewsLetter" jhiTranslate="global.form.wantNewsLetter">Accept terms of service</label>
                             <div *ngIf="wantNewsLetter.dirty && wantNewsLetter.invalid">
                                 <small class="form-text text-danger" *ngIf="wantNewsLetter.errors.required"
                                        jhiTranslate="global.messages.validate.newpassword.required">

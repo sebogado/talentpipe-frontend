@@ -2,22 +2,22 @@
     "talentpipeFrontendApp": {
         "benefit": {
             "home": {
-                "title": "Benefits",
-                "createLabel": "Crear nuevo Benefit",
-                "createOrEditLabel": "Crear o editar Benefit",
-                "search": "Search for Benefit"
+                "title": "Beneficios",
+                "createLabel": "Crear nuevo beneficio",
+                "createOrEditLabel": "Crear o editar beneficio",
+                "search": "Buscar beneficios"
             },
-            "created": "Un nuevo Benefit ha sido creado con el identificador {{ param }}",
-            "updated": "Un Benefit ha sido actualizado con el identificador {{ param }}",
-            "deleted": "Un Benefit ha sido eliminado con el identificador {{ param }}",
+            "created": "Un nuevo Beneficio ha sido creado con el identificador {{ param }}",
+            "updated": "Un Beneficio ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Beneficio ha sido eliminado con el identificador {{ param }}",
             "delete": {
-                "question": "¿Seguro que quiere eliminar Benefit {{ id }}?"
+                "question": "¿Seguro que quiere eliminar el Beneficio {{ id }}?"
             },
             "detail": {
-                "title": "Benefit"
+                "title": "Beneficio"
             },
-            "name": "Name",
-            "description": "Description"
+            "name": "Nombre",
+            "description": "Descripcion"
         }
     }
 }

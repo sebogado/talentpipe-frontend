@@ -208,7 +208,7 @@
                         <div class="form-group">
                             <input type="checkbox" class="form-control" id="acceptTermsOfService" name="acceptTermsOfService" #acceptTermsOfService="ngModel" placeholder="{{'global.form.acceptTermsOfService.placeholder' | translate}}"
                             [(ngModel)]="registerAccount.acceptTermsOfService" required>
-                            <label class="form-control-label" for="acceptTermsOfService" jhiTranslate="global.form.aceptTermsOfService">Accept terms of service</label>
+                            <label class="form-control-label" for="acceptTermsOfService" jhiTranslate="global.form.acceptTermsOfService">Accept terms of service</label>
                             <div *ngIf="acceptTermsOfService.dirty && acceptTermsOfService.invalid">
                                 <small class="form-text text-danger" *ngIf="acceptTermsOfService.errors.required"
                                        jhiTranslate="global.messages.validate.newpassword.required">
