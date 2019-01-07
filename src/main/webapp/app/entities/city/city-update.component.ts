@@ -45,6 +45,7 @@ export class CityUpdateComponent implements OnInit {
 
     save() {
         this.isSaving = true;
+        this.city.countryId = this.city.country!.id;
         if (this.city.id !== undefined) {
             this.subscribeToSaveResponse(this.cityService.update(this.city));
         } else {

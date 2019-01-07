@@ -14,8 +14,10 @@ export interface ICompany {
     number?: number;
     apartment?: string;
     postalCode?: string;
-    phone?: string;
+    phoneNumber?: string;
+    phonePrefix?: string;
     contactName?: string;
+    contactLastName?: string;
     mainUser?: IUser;
     sector?: ISector;
     city?: ICity;
@@ -34,8 +36,10 @@ export class Company implements ICompany {
         public number?: number,
         public apartment?: string,
         public postalCode?: string,
-        public phone?: string,
+        public phoneNumber?: string,
+        public phonePrefix?: string,
         public contactName?: string,
+        public contactLastName?: string,
         public mainUser?: IUser,
         public sector?: ISector,
         public city?: ICity,
