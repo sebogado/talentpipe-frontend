@@ -29,7 +29,19 @@
                     <li>
                         <a class="dropdown-item" routerLink="my-company" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
-                            <span jhiTranslate="global.menu.entities.myCompany">Sector</span>
+                            <span jhiTranslate="global.menu.entities.myCompany">MyCompany</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="/search-request/new" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span jhiTranslate="global.menu.entities.searches.my">MySearches</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="searches/new" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span jhiTranslate="global.menu.entities.searches.create">MyCompany</span>
                         </a>
                     </li>
                 </ul>
@@ -38,7 +50,7 @@
                 <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="home"></fa-icon>
-                        <span jhiTranslate="global.menu.accionesAdmin">Home</span>
+                        <span jhiTranslate="global.menu.accionesRecruiter">Home</span>
                     </span>
                 </a>
             </li>

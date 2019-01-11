@@ -4,178 +4,227 @@
             <h2 id="jhi-company-heading" jhiTranslate="talentpipeFrontendApp.company.home.createOrEditLabel">Create or edit a Company</h2>
             <div>
                 <jhi-alert-error></jhi-alert-error>
-                <div class="form-group" [hidden]="!company.id">
-                    <label for="id" jhiTranslate="global.field.id">ID</label>
-                    <input type="text" class="form-control" id="id" name="id"
-                        [(ngModel)]="company.id" readonly />
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.taxName" for="field_taxName">Tax Name</label>
-                    <input type="text" class="form-control" name="taxName" id="field_taxName"
-                        [(ngModel)]="company.taxName" required/>
-                    <div [hidden]="!(editForm.controls.taxName?.dirty && editForm.controls.taxName?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.taxName?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
+                <h4><label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.section.data" for="datos_empresa">Tax Name</label></h4>
+                <div id="datos_empresa">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.taxName" for="field_taxName">Tax Name</label>
+                                <input type="text" class="form-control" name="taxName" id="field_taxName"
+                                       [(ngModel)]="company.taxName" required/>
+                                <div [hidden]="!(editForm.controls.taxName?.dirty && editForm.controls.taxName?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.taxName?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.taxId" for="field_taxId">Tax Id</label>
+                                <input type="text" class="form-control" name="taxId" id="field_taxId"
+                                       [(ngModel)]="company.taxId" required/>
+                                <div [hidden]="!(editForm.controls.taxId?.dirty && editForm.controls.taxId?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.taxId?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.email" for="field_email">Email</label>
+                                <input type="text" class="form-control" name="email" id="field_email"
+                                       [(ngModel)]="company.email" required/>
+                                <div [hidden]="!(editForm.controls.email?.dirty && editForm.controls.email?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.email?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.name" for="field_name">Name</label>
+                                <input type="text" class="form-control" name="name" id="field_name"
+                                       [(ngModel)]="company.name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.street" for="field_street">Street</label>
+                                <input type="text" class="form-control" name="street" id="field_street"
+                                       [(ngModel)]="company.street" required/>
+                                <div [hidden]="!(editForm.controls.street?.dirty && editForm.controls.street?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.street?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.number" for="field_number">Number</label>
+                                <input type="number" class="form-control" name="number" id="field_number"
+                                       [(ngModel)]="company.number" required/>
+                                <div [hidden]="!(editForm.controls.number?.dirty && editForm.controls.number?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.number?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.number?.errors?.number" jhiTranslate="entity.validation.number">
+                                        This field should be a number.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.floor" for="field_floor">Floor</label>
+                                <input type="number" class="form-control" name="floor" id="field_floor"
+                                       [(ngModel)]="company.floor" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.apartment" for="field_apartment">Apartment</label>
+                                <input type="text" class="form-control" name="apartment" id="field_apartment"
+                                       [(ngModel)]="company.apartment" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.city" for="field_city">City</label>
+                                <select class="form-control" id="field_city" name="city" [(ngModel)]="company.city"  required>
+                                    <option *ngIf="!editForm.value.city" [ngValue]="null" selected></option>
+                                    <option [ngValue]="cityOption.id === company.city?.id ? company.city : cityOption" *ngFor="let cityOption of cities; trackBy: trackCityById">{{cityOption.name}}</option>
+                                </select>
+                                <div [hidden]="!(editForm.controls.city?.dirty && editForm.controls.city?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.city?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.postalCode" for="field_postalCode">Postal Code</label>
+                                <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                                       [(ngModel)]="company.postalCode" required/>
+                                <div [hidden]="!(editForm.controls.postalCode?.dirty && editForm.controls.postalCode?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.postalCode?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.sector" for="field_sector">Sector</label>
+                                <select class="form-control" id="field_sector" name="sector" [(ngModel)]="company.sector"  required>
+                                    <option *ngIf="!editForm.value.sector" [ngValue]="null" selected></option>
+                                    <option [ngValue]="sectorOption.id === company.sector?.id ? company.sector : sectorOption" *ngFor="let sectorOption of sectors; trackBy: trackSectorById">{{sectorOption.name}}</option>
+                                </select>
+                            </div>
+                            <div [hidden]="!(editForm.controls.sector?.dirty && editForm.controls.sector?.invalid)">
+                                <small class="form-text text-danger"
+                                       [hidden]="!editForm.controls.sector?.errors?.required" jhiTranslate="entity.validation.required">
+                                    This field is required.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.companyType" for="field_companyType">Company Type</label>
+                                <select class="form-control" id="field_companyType" name="companyType" [(ngModel)]="company.companyType"  required>
+                                    <option *ngIf="!editForm.value.companyType" [ngValue]="null" selected></option>
+                                    <option [ngValue]="companyTypeOption.id === company.companyType?.id ? company.companyType : companyTypeOption" *ngFor="let companyTypeOption of companytypes; trackBy: trackCompanyTypeById">{{companyTypeOption.name}}</option>
+                                </select>
+                            </div>
+                            <div [hidden]="!(editForm.controls.companyType?.dirty && editForm.controls.companyType?.invalid)">
+                                <small class="form-text text-danger"
+                                       [hidden]="!editForm.controls.companyType?.errors?.required" jhiTranslate="entity.validation.required">
+                                    This field is required.
+                                </small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.taxId" for="field_taxId">Tax Id</label>
-                    <input type="text" class="form-control" name="taxId" id="field_taxId"
-                        [(ngModel)]="company.taxId" required/>
-                    <div [hidden]="!(editForm.controls.taxId?.dirty && editForm.controls.taxId?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.taxId?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
+                <h4><label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.section.contact" for="datos_contact">Tax Name</label></h4>
+                <div id="datos_contact">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.contactName" for="field_contactName">Contact Name</label>
+                                <input type="text" class="form-control" name="contactName" id="field_contactName"
+                                       [(ngModel)]="company.contactName" required/>
+                                <div [hidden]="!(editForm.controls.contactName?.dirty && editForm.controls.contactName?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.contactName?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.contactLastName" for="field_contactLastName">Contact Name</label>
+                                <input type="text" class="form-control" name="contactLastName" id="field_contactLastName"
+                                       [(ngModel)]="company.contactLastName" required/>
+                                <div [hidden]="!(editForm.controls.contactLastName?.dirty && editForm.controls.contactLastName?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.contactLastName?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.email" for="field_email">Email</label>
-                    <input type="text" class="form-control" name="email" id="field_email"
-                        [(ngModel)]="company.email" required/>
-                    <div [hidden]="!(editForm.controls.email?.dirty && editForm.controls.email?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.email?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.phonePrefix" for="field_phonePrefix">Phone</label>
+                                <input type="text" class="form-control" name="phone" id="field_phonePrefix"
+                                       [(ngModel)]="company.phonePrefix" required/>
+                                <div [hidden]="!(editForm.controls.phonePrefix?.dirty && editForm.controls.phonePrefix?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.phonePrefix?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.phoneNumber" for="field_phoneNumber">Phone</label>
+                                <input type="text" class="form-control" name="phone" id="field_phoneNumber"
+                                       [(ngModel)]="company.phoneNumber" required/>
+                                <div [hidden]="!(editForm.controls.phone?.dirty && editForm.controls.phoneNumber?.invalid)">
+                                    <small class="form-text text-danger"
+                                           [hidden]="!editForm.controls.phoneNumber?.errors?.required" jhiTranslate="entity.validation.required">
+                                        This field is required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.name" for="field_name">Name</label>
-                    <input type="text" class="form-control" name="name" id="field_name"
-                        [(ngModel)]="company.name" />
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.street" for="field_street">Street</label>
-                    <input type="text" class="form-control" name="street" id="field_street"
-                        [(ngModel)]="company.street" required/>
-                    <div [hidden]="!(editForm.controls.street?.dirty && editForm.controls.street?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.street?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.number" for="field_number">Number</label>
-                    <input type="number" class="form-control" name="number" id="field_number"
-                           [(ngModel)]="company.number" required/>
-                    <div [hidden]="!(editForm.controls.number?.dirty && editForm.controls.number?.invalid)">
-                        <small class="form-text text-danger"
-                               [hidden]="!editForm.controls.number?.errors?.required" jhiTranslate="entity.validation.required">
-                            This field is required.
-                        </small>
-                        <small class="form-text text-danger"
-                               [hidden]="!editForm.controls.number?.errors?.number" jhiTranslate="entity.validation.number">
-                            This field should be a number.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.floor" for="field_floor">Floor</label>
-                    <input type="number" class="form-control" name="floor" id="field_floor"
-                        [(ngModel)]="company.floor" />
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.apartment" for="field_apartment">Apartment</label>
-                    <input type="text" class="form-control" name="apartment" id="field_apartment"
-                        [(ngModel)]="company.apartment" />
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.postalCode" for="field_postalCode">Postal Code</label>
-                    <input type="text" class="form-control" name="postalCode" id="field_postalCode"
-                        [(ngModel)]="company.postalCode" required/>
-                    <div [hidden]="!(editForm.controls.postalCode?.dirty && editForm.controls.postalCode?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.postalCode?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.phonePrefix" for="field_phonePrefix">Phone</label>
-                    <input type="text" class="form-control" name="phone" id="field_phonePrefix"
-                        [(ngModel)]="company.phonePrefix" required/>
-                    <div [hidden]="!(editForm.controls.phonePrefix?.dirty && editForm.controls.phonePrefix?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.phonePrefix?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.phoneNumber" for="field_phoneNumber">Phone</label>
-                    <input type="text" class="form-control" name="phone" id="field_phoneNumber"
-                        [(ngModel)]="company.phoneNumber" required/>
-                    <div [hidden]="!(editForm.controls.phone?.dirty && editForm.controls.phoneNumber?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.phoneNumber?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.contactName" for="field_contactName">Contact Name</label>
-                    <input type="text" class="form-control" name="contactName" id="field_contactName"
-                        [(ngModel)]="company.contactName" required/>
-                    <div [hidden]="!(editForm.controls.contactName?.dirty && editForm.controls.contactName?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.contactName?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.contactLastName" for="field_contactLastName">Contact Name</label>
-                    <input type="text" class="form-control" name="contactLastName" id="field_contactLastName"
-                        [(ngModel)]="company.contactLastName" required/>
-                    <div [hidden]="!(editForm.controls.contactLastName?.dirty && editForm.controls.contactLastName?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.contactLastName?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.sector" for="field_sector">Sector</label>
-                    <select class="form-control" id="field_sector" name="sector" [(ngModel)]="company.sector"  required>
-                        <option *ngIf="!editForm.value.sector" [ngValue]="null" selected></option>
-                        <option [ngValue]="sectorOption.id === company.sector?.id ? company.sector : sectorOption" *ngFor="let sectorOption of sectors; trackBy: trackSectorById">{{sectorOption.name}}</option>
-                    </select>
-                </div>
-                <div [hidden]="!(editForm.controls.sector?.dirty && editForm.controls.sector?.invalid)">
-                    <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.sector?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                    </small>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.city" for="field_city">City</label>
-                    <select class="form-control" id="field_city" name="city" [(ngModel)]="company.city"  required>
-                        <option *ngIf="!editForm.value.city" [ngValue]="null" selected></option>
-                        <option [ngValue]="cityOption.id === company.city?.id ? company.city : cityOption" *ngFor="let cityOption of cities; trackBy: trackCityById">{{cityOption.name}}</option>
-                    </select>
-                </div>
-                <div [hidden]="!(editForm.controls.city?.dirty && editForm.controls.city?.invalid)">
-                    <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.city?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                    </small>
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.company.companyType" for="field_companyType">Company Type</label>
-                    <select class="form-control" id="field_companyType" name="companyType" [(ngModel)]="company.companyType"  required>
-                        <option *ngIf="!editForm.value.companyType" [ngValue]="null" selected></option>
-                        <option [ngValue]="companyTypeOption.id === company.companyType?.id ? company.companyType : companyTypeOption" *ngFor="let companyTypeOption of companytypes; trackBy: trackCompanyTypeById">{{companyTypeOption.name}}</option>
-                    </select>
-                </div>
-                <div [hidden]="!(editForm.controls.companyType?.dirty && editForm.controls.companyType?.invalid)">
-                    <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.companyType?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                    </small>
                 </div>
             </div>
             <div>

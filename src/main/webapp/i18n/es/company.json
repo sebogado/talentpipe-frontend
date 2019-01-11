@@ -7,6 +7,10 @@
                 "createOrEditLabel": "Crear o editar Empresa",
                 "search": "Buscar empresa"
             },
+            "section": {
+                "data": "Informacion de la empresa",
+                "contact": "Informacion del contacto"
+            },
             "created": "Una nueva Empresa ha sido creada con el identificador {{ param }}",
             "updated": "Una Empresa ha sido actualizada con el identificador {{ param }}",
             "deleted": "Una Empresa ha sido eliminada con el identificador {{ param }}",
@@ -16,6 +20,8 @@
             "detail": {
                 "title": "EMpresa"
             },
+            "phonePrefix": "Prefijo del telefono",
+            "phoneNumber": "Numero telefonico (Sin prefijo)",
             "taxName": "Razon social",
             "taxId": "C.U.I.L.",
             "email": "Email",
@@ -27,7 +33,7 @@
             "postalCode": "Código postal",
             "phone": "Telefono",
             "contactName": "Nombre del contacto",
-            "contactLastName": "Nombre del contacto",
+            "contactLastName": "Apellido del contacto",
             "mainUser": "Usuario principal",
             "sector": "Sector",
             "city": "Ciudad",

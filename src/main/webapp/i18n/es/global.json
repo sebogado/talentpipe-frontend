@@ -27,6 +27,8 @@
                 "company": "Company",
                 "authority": "Authority",
                 "role": "Role",
+                "searches.my": "Mis busquedas",
+                "searches.create": "Crear una nueva busqueda",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

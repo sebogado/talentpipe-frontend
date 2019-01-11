@@ -2,10 +2,10 @@
     "talentpipeFrontendApp": {
         "searchRequest": {
             "home": {
-                "title": "Search Requests",
-                "createLabel": "Crear nuevo Search Request",
-                "createOrEditLabel": "Crear o editar Search Request",
-                "search": "Search for Search Request"
+                "title": "Solicitudes de busqueda",
+                "createLabel": "Crear una nueva solicitud de busqueda",
+                "createOrEditLabel": "Crear una solicitud de busqueda",
+                "search": "Buscar una solicitud de busqueda"
             },
             "created": "Un nuevo Search Request ha sido creado con el identificador {{ param }}",
             "updated": "Un Search Request ha sido actualizado con el identificador {{ param }}",
@@ -16,18 +16,18 @@
             "detail": {
                 "title": "Search Request"
             },
-            "name": "Name",
-            "description": "Description",
-            "minSalary": "Min Salary",
-            "maxSalary": "Max Salary",
-            "position": "Position",
-            "company": "Company",
-            "ExpertiseLevel": "Expertise Level",
-            "requiredTechnicalSkills": "Required Technical Skills",
-            "nonRequiredTechnicalSkills": "Non Required Technical Skills",
-            "requiredSoftSkills": "Required Soft Skills",
-            "nonRequiredSoftSkills": "Non Required Soft Skills",
-            "benefits": "Benefits"
+            "name": "Nombre",
+            "description": "Descripcion",
+            "minSalary": "Salario básico",
+            "maxSalary": "Salario máximo",
+            "position": "Posición",
+            "company": "Empresa",
+            "ExpertiseLevel": "Nivel de expertise",
+            "requiredTechnicalSkills": "Habilidades tecnicas requeridas",
+            "nonRequiredTechnicalSkills": "Habilidades tecnicas deseables",
+            "requiredSoftSkills": "Habilidades blandas requeridas",
+            "nonRequiredSoftSkills": "Habilidades blandas no requeridas",
+            "benefits": "Beneficios"
         }
     }
 }
