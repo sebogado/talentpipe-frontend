@@ -70,19 +70,72 @@
                         </small>
                     </div>
                 </div>
+                <div class="form-group" *jhiHasAnyAuthority="'ROLE_ADMIN'">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.Company" for="field_Company">Company</label>
+                    <select class="form-control" id="field_Company" name="Company" [(ngModel)]="searchRequest.company" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="companyOption.id === searchRequest.company?.id ? searchRequest.company : companyOption" *ngFor="let companyOption of companies; trackBy: trackExpertiseLevelById">{{expertiseLevelOption.name}}</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.ExpertiseLevel" for="field_ExpertiseLevel">Expertise Level</label>
+
                     <select class="form-control" id="field_ExpertiseLevel" name="ExpertiseLevel" [(ngModel)]="searchRequest.expertiseLevel" >
                         <option [ngValue]="null"></option>
                         <option [ngValue]="expertiseLevelOption.id === searchRequest.expertiseLevel?.id ? searchRequest.expertiseLevel : expertiseLevelOption" *ngFor="let expertiseLevelOption of expertiselevels; trackBy: trackExpertiseLevelById">{{expertiseLevelOption.name}}</option>
                     </select>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.requiredTechnicalSkills" for="field_required_technical_skill">Technical skills</label>
+                    <span class="ui-fluid">
+                        <p-autoComplete id="field_required_technical_skill" [(ngModel)]="searchRequest.requiredTechnicalSkills" [suggestions]="suggestedRequiredTechnicalSkill"
+                                        (completeMethod)="searchRequiredTechnicalSkill($event)" [ngModelOptions]="{standalone: true}" field="name" [multiple]="true">
+
+                        </p-autoComplete>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.nonRequiredTechnicalSkills" for="field_non_required_technical_skill">Position</label>
+                    <span class="ui-fluid">
+                        <p-autoComplete id="field_non_required_technical_skill" [(ngModel)]="searchRequest.nonRequiredTechnicalSkills" [suggestions]="suggestedNonRequiredTechnicalSkill"
+                                        (completeMethod)="searchNonRequiredTechnicalSkill($event)" [ngModelOptions]="{standalone: true}" field="name" [multiple]="true">
+
+                        </p-autoComplete>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.requiredSoftSkills" for="field_non_required_soft_skill">Position</label>
+                    <span class="ui-fluid">
+                        <p-autoComplete id="field_required_soft_skill" [(ngModel)]="searchRequest.requiredSoftSkills" [suggestions]="suggestedRequiredSoftSkill"
+                                        (completeMethod)="searchRequiredSoftSkill($event)" [ngModelOptions]="{standalone: true}" field="name" [multiple]="true">
+
+                        </p-autoComplete>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.nonRequiredSoftSkills" for="field_non_required_soft_skill">Position</label>
+                    <span class="ui-fluid">
+                        <p-autoComplete id="field_non_required_soft_skill" [(ngModel)]="searchRequest.nonRequiredSoftSkills" [suggestions]="suggestedNonRequiredSoftSkill"
+                                        (completeMethod)="searchNonRequiredSoftSkill($event)" [ngModelOptions]="{standalone: true}" field="name" [multiple]="true">
+                        </p-autoComplete>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="talentpipeFrontendApp.searchRequest.benefits" for="field_benefits">Benefits</label>
+                    <span class="ui-fluid">
+                        <p-autoComplete id="field_benefits" [(ngModel)]="searchRequest.benefits" [suggestions]="suggestedBenefits"
+                                        (completeMethod)="searchBenefits($event)" [ngModelOptions]="{standalone: true}" field="name" [multiple]="true">
+                        </p-autoComplete>
+                    </span>
                 </div>
             </div>
             <div>
                 <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
                     <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
                 </button>
-                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                <button type="submit" id="save-entity" *jhiHasAnyAuthority="['ROLE_ADMIN']" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+                <button type="button" id="save-me-entity" (click)="saveForMe()" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
                     <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
                 </button>
             </div>

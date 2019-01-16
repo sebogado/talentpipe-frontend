@@ -12,6 +12,7 @@ type EntityArrayResponseType = HttpResponse<ISearchRequest[]>;
 @Injectable({ providedIn: 'root' })
 export class SearchRequestService {
     public resourceUrl = SERVER_API_URL + 'api/search-requests';
+    public resourceUrlMe = SERVER_API_URL + 'api/search-requests/me';
     public resourceSearchUrl = SERVER_API_URL + 'api/_search/search-requests';
 
     constructor(private http: HttpClient) {}
@@ -40,5 +41,13 @@ export class SearchRequestService {
     search(req?: any): Observable<EntityArrayResponseType> {
         const options = createRequestOption(req);
         return this.http.get<ISearchRequest[]>(this.resourceSearchUrl, { params: options, observe: 'response' });
+    }
+
+    createMe(searchRequest: ISearchRequest): Observable<EntityResponseType> {
+        return this.http.post<ISearchRequest>(this.resourceUrlMe, searchRequest, { observe: 'response' });
+    }
+
+    updateMe(searchRequest: ISearchRequest) {
+        return this.http.put<ISearchRequest>(this.resourceUrlMe, searchRequest, { observe: 'response' });
     }
 }

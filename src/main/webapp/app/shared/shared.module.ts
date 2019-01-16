@@ -8,13 +8,24 @@ import {
     JhiLoginModalComponent,
     HasAnyAuthorityDirective
 } from './';
+import { FileUploadModule } from 'primeng/fileupload';
+import { AutoCompleteModule } from 'primeng/autocomplete';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [TalentpipeFrontendSharedLibsModule, TalentpipeFrontendSharedCommonModule],
     declarations: [JhiLoginModalComponent, HasAnyAuthorityDirective],
     providers: [{ provide: NgbDateAdapter, useClass: NgbDateMomentAdapter }],
     entryComponents: [JhiLoginModalComponent],
-    exports: [TalentpipeFrontendSharedCommonModule, JhiLoginModalComponent, HasAnyAuthorityDirective],
+    exports: [
+        TalentpipeFrontendSharedCommonModule,
+        JhiLoginModalComponent,
+        HasAnyAuthorityDirective,
+        BrowserAnimationsModule,
+        NoopAnimationsModule,
+        FileUploadModule,
+        AutoCompleteModule
+    ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TalentpipeFrontendSharedModule {
