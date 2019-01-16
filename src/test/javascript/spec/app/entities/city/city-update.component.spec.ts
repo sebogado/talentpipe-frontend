@@ -7,6 +7,7 @@ import { TalentpipeFrontendTestModule } from '../../../test.module';
 import { CityUpdateComponent } from 'app/entities/city/city-update.component';
 import { CityService } from 'app/entities/city/city.service';
 import { City } from 'app/shared/model/city.model';
+import { Country } from 'app/shared/model/country.model';
 
 describe('Component Tests', () => {
     describe('City Management Update Component', () => {
@@ -28,39 +29,35 @@ describe('Component Tests', () => {
         });
 
         describe('save', () => {
-            it(
-                'Should call update service on save for existing entity',
-                fakeAsync(() => {
-                    // GIVEN
-                    const entity = new City(123);
-                    spyOn(service, 'update').and.returnValue(of(new HttpResponse({ body: entity })));
-                    comp.city = entity;
-                    // WHEN
-                    comp.save();
-                    tick(); // simulate async
+            it('Should call update service on save for existing entity', fakeAsync(() => {
+                // GIVEN
+                const entity = new City(123);
+                entity.country = new Country();
+                spyOn(service, 'update').and.returnValue(of(new HttpResponse({ body: entity })));
+                comp.city = entity;
+                // WHEN
+                comp.save();
+                tick(); // simulate async
 
-                    // THEN
-                    expect(service.update).toHaveBeenCalledWith(entity);
-                    expect(comp.isSaving).toEqual(false);
-                })
-            );
+                // THEN
+                expect(service.update).toHaveBeenCalledWith(entity);
+                expect(comp.isSaving).toEqual(false);
+            }));
 
-            it(
-                'Should call create service on save for new entity',
-                fakeAsync(() => {
-                    // GIVEN
-                    const entity = new City();
-                    spyOn(service, 'create').and.returnValue(of(new HttpResponse({ body: entity })));
-                    comp.city = entity;
-                    // WHEN
-                    comp.save();
-                    tick(); // simulate async
+            it('Should call create service on save for new entity', fakeAsync(() => {
+                // GIVEN
+                const entity = new City();
+                spyOn(service, 'create').and.returnValue(of(new HttpResponse({ body: entity })));
+                comp.city = entity;
+                comp.city.country = new Country();
+                // WHEN
+                comp.save();
+                tick(); // simulate async
 
-                    // THEN
-                    expect(service.create).toHaveBeenCalledWith(entity);
-                    expect(comp.isSaving).toEqual(false);
-                })
-            );
+                // THEN
+                expect(service.create).toHaveBeenCalledWith(entity);
+                expect(comp.isSaving).toEqual(false);
+            }));
         });
     });
 });
