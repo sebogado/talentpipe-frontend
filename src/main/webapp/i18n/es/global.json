@@ -130,7 +130,8 @@
         "ribbon": {
             "dev": "Development"
         },
-        "item-count": "Monstrando {{first}} - {{second}} de {{total}} artículos."
+        "item-count": "Monstrando {{first}} - {{second}} de {{total}} artículos.",
+        "accionesRecruiter": "Acciones"
     },
     "entity": {
         "action": {

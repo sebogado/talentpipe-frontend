@@ -18,7 +18,7 @@ import { TalentpipeFrontendCompanyModule } from './company/company.module';
 import { TalentpipeFrontendAuthorityModule } from './authority/authority.module';
 import { TalentpipeFrontendRoleModule } from './role/role.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
-
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
     // prettier-ignore
     imports: [
@@ -41,6 +41,7 @@ import { TalentpipeFrontendRoleModule } from './role/role.module';
         TalentpipeFrontendRoleModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
+    exports: [BrowserAnimationsModule, NoopAnimationsModule],
     declarations: [],
     entryComponents: [],
     providers: [],

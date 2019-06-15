@@ -14,7 +14,7 @@ import { SoftSkillService } from 'app/entities/soft-skill';
 import { ITechnicalSkill } from 'app/shared/model/technical-skill.model';
 import { TechnicalSkillService } from 'app/entities/technical-skill';
 import { CompanyService } from 'app/entities/company';
-import { IBenefit } from 'app/shared/model/benefit.model';
+import { Benefit, IBenefit } from 'app/shared/model/benefit.model';
 import { BenefitService } from 'app/entities/benefit';
 
 @Component({
@@ -163,14 +163,17 @@ export class SearchRequestUpdateComponent implements OnInit {
     }
 
     searchBenefits(event: any) {
-        this.benefitService.query(event.query).subscribe(
+        console.log(event);
+        this.suggestedBenefits = [new Benefit(1, 'Home office 2 x semana')];
+        /* this.benefitService.query(event.query).subscribe(
             (res: HttpResponse<IBenefit[]>) => {
                 console.log(res.body);
                 this.suggestedBenefits = res.body;
+                console.log('This are the benefits:' + res.body[0].name);
             },
             (err: HttpErrorResponse) => {
                 this.onError(err.message);
             }
-        );
+        );*/
     }
 }

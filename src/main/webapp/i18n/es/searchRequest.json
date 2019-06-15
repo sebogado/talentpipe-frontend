@@ -18,6 +18,7 @@
             },
             "name": "Nombre",
             "description": "Descripcion",
+            "Company": "Empresa",
             "minSalary": "Salario básico",
             "maxSalary": "Salario máximo",
             "position": "Posición",

@@ -10,7 +10,7 @@ import {
 } from './';
 import { FileUploadModule } from 'primeng/fileupload';
 import { AutoCompleteModule } from 'primeng/autocomplete';
-import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [TalentpipeFrontendSharedLibsModule, TalentpipeFrontendSharedCommonModule],
@@ -21,8 +21,8 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
         TalentpipeFrontendSharedCommonModule,
         JhiLoginModalComponent,
         HasAnyAuthorityDirective,
-        BrowserAnimationsModule,
-        NoopAnimationsModule,
+        //      BrowserAnimationsModule,
+        //      NoopAnimationsModule,
         FileUploadModule,
         AutoCompleteModule
     ],

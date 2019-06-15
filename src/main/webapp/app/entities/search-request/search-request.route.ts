@@ -68,6 +68,18 @@ export const searchRequestRoute: Routes = [
         canActivate: [UserRouteAccessService]
     },
     {
+        path: 'my-search-request',
+        component: SearchRequestUpdateComponent,
+        resolve: {
+            searchRequest: SearchRequestResolve
+        },
+        data: {
+            authorities: ['ROLE_USER'],
+            pageTitle: 'talentpipeFrontendApp.searchRequest.home.title'
+        },
+        canActivate: [UserRouteAccessService]
+    },
+    {
         path: 'search-request/:id/edit',
         component: SearchRequestUpdateComponent,
         resolve: {
